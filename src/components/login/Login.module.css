@@ -9,7 +9,7 @@
 .header {
     height: 50%; /* 50% of the parent container */
     width: 100%;
-    background-image: url("../../src/assets/Header-bg.svg"); /* Background image for the header */
+    background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
