@@ -261,4 +261,12 @@
         /* Updated styles for smaller screens */
         height: 40%;
     }
+    .formLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 14px;
+    }
 }
