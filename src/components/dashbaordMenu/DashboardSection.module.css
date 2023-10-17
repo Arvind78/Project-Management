@@ -1,0 +1,307 @@
+.DashboardSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.sideMenuSection {
+    background-color: rgb(250, 249, 247);
+    width: 230px;
+
+    font-size: 16px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.sideMenu div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 0px;
+}
+
+.contentSection {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    height:85%;
+    width: 100%;
+ 
+    overflow-y: scroll;
+ 
+
+
+}
+
+
+.logoutSection {
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHeader {
+    height: 80px;
+    width: 100%;
+    background-image: url("../../assets/Header-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 0px 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHeader .contentHeaderTitle {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 0px 35px;
+}
+
+.contentHeader .contentHeaderTitle img {
+    height: 18px;
+    width: 18px;
+}
+
+.contentHeader .contentHeaderLogo {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.contentHeader .contentHeaderLogo img {
+    height: 60px;
+    width: 60px;
+}
+@media (max-width:900px) {
+    .sideMenuSection {
+        background-color: rgb(250, 249, 247);
+        width: 50px;
+    
+        font-size: 16px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+    } 
+    .sideMenu div span {
+        display: none;
+   }
+}
+@media (max-width:590px) {
+
+    .DashboardSection {
+        height: 100vh;
+        width: 100%;
+
+        position: relative;
+
+    }
+
+    
+
+.contentSection {
+
+        width: 100%;
+ 
+    }
+
+    .sideMenuSection {
+        width: 100%;
+
+        display: flex;
+        padding: 6px 12px;
+        align-items: center;
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        justify-content: space-between;
+        z-index: 9;
+    }
+
+    .sideMenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
+    .sideMenu div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 30px;
+    }
+
+    .sideMenu div span {
+        display: none;
+   }
+
+    .contentSection {
+        
+        width: 100%;
+        order: 2;
+    }
+
+    .logoutSection {
+        height: 0;
+        display: block;
+   }
+
+    .contentHeader {
+        height: 60px;
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contentHeader .contentHeaderTitle {
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+        color: aliceblue;
+        padding: 0px 15px;
+    }
+
+     
+    .contentHeader .contentHeaderLogo {
+        width: 50%;
+        padding: 0px 0px;
+    }
+
+    .contentHeader .contentHeaderLogo img {
+     display: none;
+    }
+
+
+}
+
+
+@media (max-width:380px) {
+
+    .DashboardSection {
+        height: 100vh;
+        width: 100%;
+
+        position: relative;
+
+    }
+
+    .contentSection {
+        background-color: green;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .sideMenuSection {
+        width: 100%;
+
+        display: flex;
+        padding: 6px 12px;
+        align-items: center;
+        position: absolute;
+        top: 90%;
+        left: 0%;
+        justify-content: space-between;
+
+    }
+
+    .sideMenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
+    .sideMenu div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 15px;
+    }
+
+    .sideMenu div span {
+        display: none;
+   }
+
+    .contentSection {
+        background-color: green;
+        width: 100%;
+        order: 2;
+    }
+
+    .logoutSection {
+        height: 0;
+        display: block;
+   }
+
+    .contentHeader {
+        height: 60px;
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contentHeader .contentHeaderTitle {
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+        color: aliceblue;
+        padding: 0px 15px;
+    }
+
+    .contentHeader .contentHeaderTitle img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .contentHeader .contentHeaderLogo {
+        width: 50%;
+        padding: 0px 0px;
+    }
+
+    .contentHeader .contentHeaderLogo img {
+        height: 40px;
+        width: 40px;
+    }
+
+
+}
+
+

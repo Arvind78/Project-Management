@@ -1,0 +1,264 @@
+/* Set base styles for the main container */
+.mainContainer {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+    background-color: #ffffff; /* White background color */
+}
+
+/* Styles for the header section */
+.header {
+    height: 50%; /* 50% of the parent container */
+    width: 100%;
+    background-image: url("../../src/assets/Header-bg.svg"); /* Background image for the header */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 0px 80px; /* Border radius for the bottom-right corner */
+    display: block;
+    position: relative;
+}
+
+/* Styles for the login container */
+.loginContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the form container */
+.formContainer {
+    height: auto;
+    padding: 15px 10px;
+    width: 28%;
+    position: absolute;
+    top: 8%;
+}
+
+/* Styles for the logo heading */
+.logoHeading {
+    
+    color: #ffffff; /* White text color */
+}
+
+/* Styles for form elements */
+.form {
+    margin: 15px 0px;
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px;
+    padding: 10px 5px 30px 5px;
+    box-shadow: 0px 0px 5px 0px rgba(145, 143, 143, 0.75); /* Box shadow for the form */
+}
+
+/* Styles for form headings */
+.formHeading {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 15px;
+    color: #2b2929c7; /* Semi-transparent text color */
+}
+
+/* styles for from logos */
+.formLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+/* Styles for form input groups */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    gap: 5px;
+}
+
+/* Styles for form inputs */
+.formInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #dad7d7c7;
+    outline: none;
+}
+
+/* Styles for error messages */
+.error {
+    color: red; /* Red error text color */
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+/* Styles for form inputs with errors */
+.errorFormInput{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #da0303c7;
+    outline: none;
+}
+.errorformInputPassword {
+    padding: 0px;
+    border-radius: 5px;
+    border: 0.5px solid #da0303c7;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Styles for password input */
+.formInputPassword {
+    padding: 7px;
+    border-radius: 5px;
+    border: 0.5px solid #dad7d7c7;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+}
+
+/* Styles for the "Forget Password" link */
+.forgetPassword {
+    text-align: right;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #1475cf; /* Link color */
+}
+
+/* Styles for form submission button */
+.formGroupBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton {
+    padding: 10px;
+    color: #ffffff; /* White text color */
+    background-color: #1475cf; /* Button background color */
+    outline: none;
+    border: none;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.submitButton:hover {
+    background-color: #0486ff;
+    transition: 400ms ease-in; /* Smooth transition effect */
+}
+
+/* Styles for error status messages */
+.errorStatus {
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Media queries for responsive design */
+/* For screens up to 1050px wide */
+@media (max-width: 1350px) {
+
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width:40%;
+    }
+    .header {
+        height:50%;
+    }   
+}
+
+/* For screens up to 1050px wide */
+@media (max-width: 1050px) {
+
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width:40%;
+    }
+    .header {
+        height:50%;
+    }   
+}
+
+/* For screens up to 930px wide */
+@media (max-width: 930px) {
+
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width: 50%;
+    }
+}
+
+/* For screens up to 780px wide */
+@media (max-width: 780px) {
+    
+
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width:55%;
+    }
+}
+
+/* For screens up to 600px wide */
+@media (max-width: 600px) {
+  
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width:60%;
+    }
+}
+
+/* For screens up to 550px wide */
+@media (max-width: 550px) {
+  
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width:70%;
+    }
+}
+
+/* For screens up to 450px wide */
+@media (max-width: 450px) {
+     
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width: 90%;
+    }
+
+    .submitButton {
+        /* Updated styles for smaller screens */
+        width: 95%;
+    }
+
+    .header {
+        /* Updated styles for smaller screens */
+        height: 40%;
+    }
+}
+
+/* For screens up to 350px wide */
+@media (max-width: 350px) {
+    
+
+    .formContainer {
+        /* Updated styles for smaller screens */
+        width: 90%;
+    }
+
+    .submitButton {
+        /* Updated styles for smaller screens */
+        width: 98%;
+    }
+
+    .header {
+        /* Updated styles for smaller screens */
+        height: 40%;
+    }
+}

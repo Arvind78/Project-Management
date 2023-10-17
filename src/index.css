@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Mulish', sans-serif;
+ }
+ 
+
+ input.ant-input.css-dev-only-do-not-override-3mqfnx {
+    font-family: 'Mulish', sans-serif;
+}
+
+input.ant-input.css-dev-only-do-not-override-3mqfnx::placeholder {
+    font-family: 'Mulish', sans-serif;
+    color: rgba(153, 155, 156, 0.842);
+
+}
+
+input::placeholder{
+    color: rgba(153, 155, 156, 0.842);
+
+}
+
+
+/* Webkit-based Browsers (Chrome, Safari) */
+/* scrollbar width */
+
+::-webkit-scrollbar {
+
+    width: 5px; /* Set your desired scrollbar width */
+  }
+  
+  /* scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 80px;
+    /* Set your desired track color */
+  }
+  
+  /* scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 80px;
+
+    background: #cecbcb; /* Set your desired handle color */
+  }
+  
+  /* scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cccaca; /* Set your desired handle color on hover */
+  }
+  
+
+ 
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-picker{
+    width: 280px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+ 
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
+    justify-content: center;
+  }
+
+
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
+    padding:0px 10px ;
+    font-size: 14px;
+
+  }
+
+  
+ 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+    position: relative;
+    padding: 9gpx 10px;
+    text-align: center;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width:800px){
+  
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
+    justify-content: center;
+  }
+
+
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
+    padding:0px 5px ;
+    font-size: 10px;
+
+  }
+
+  
+ 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+    position: relative;
+    padding: 5px 0px;
+    text-align: center;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+
+}
+
+
+
+@media (max-width:600px){
+  
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
+    justify-content: center;
+    margin: 10px 0px;
+  }
+
+
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
+    padding:20px 5px ;
+    font-size: 10px;
+
+  }
+
+  
+ 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+    position: relative;
+    padding:10px 5px;
+    text-align: center;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+
+}
