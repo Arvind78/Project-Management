@@ -15,9 +15,7 @@ const App = () => {
 
 
   useEffect(() => {
-
     if (user) return nevigate("/dashboard")
-    console.log(user);
   }, [])
 
   return (
@@ -26,7 +24,7 @@ const App = () => {
       <Route path='/' element={<LoginPage />} />
 
       {/* Route for the user dashboard  */}
-     {user&& <Route path='/dashboard' element={<UserDashboardPage />} />}
+     { (user===true)?  <Route path='/dashboard' element={<UserDashboardPage />}/>:  alert("User not authorized")}
 
     </Routes>
   );
