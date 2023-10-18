@@ -7,8 +7,8 @@
     "dev": "vite",  
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",   
     "preview": "vite preview",  
-    "build": "vite build --base=/",   
-    "prebuild": "cp public/_redirects dist/"  
+    "build": "vite build " 
+     
   },
   "dependencies": {
     "antd": "^5.10.1",  
