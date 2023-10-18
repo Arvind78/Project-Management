@@ -27,7 +27,7 @@ const ProjectChart = ({ data }) => {
       {/* Bar Chart displaying project counts based on departments */}
       <BarChart data={chartData} margin={{ top: 20, right: 10, left: 10, bottom: 5 }}>
         {/* X-Axis representing department names */}
-        <XAxis fontSize={12} dataKey="department" />
+        <XAxis fontSize={10} dataKey="department" />
         {/* Y-Axis for project counts */}
         <YAxis />
         {/* Tooltip to display detailed information on hover */}
