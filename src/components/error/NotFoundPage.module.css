@@ -1,0 +1,35 @@
+/* Styles for the error container */
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to fill the viewport */
+    background-color: #f1ebeb88; /* Light gray background with opacity */
+    text-align: center; /* Center the text inside the container */
+  }
+  
+  /* Styles for the error heading */
+  .errorHeading {
+    font-size: 48px; /* Large font size for the heading */
+    color: #1475cf; /* Blue color for the heading */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+  }
+  
+  /* Styles for the error message */
+  .errorMessage {
+    font-size: 24px; /* Medium font size for the message */
+    color: #888; /* Gray color for the message */
+  }
+  
+  /* Responsive styles for smaller devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .errorHeading {
+      font-size: 36px; /* Adjusted font size for smaller screens */
+    }
+  
+    .errorMessage {
+      font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+  }
+  

@@ -1,137 +1,108 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
- *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-  font-family: 'Mulish', sans-serif;
- }
- 
 
- input.ant-input.css-dev-only-do-not-override-3mqfnx {
+/* Reset Default Styles and Apply Custom Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
     font-family: 'Mulish', sans-serif;
 }
 
+/* Style Custom Input Field with Specific Class */
+input.ant-input.css-dev-only-do-not-override-3mqfnx {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Style Input Placeholder Text */
 input.ant-input.css-dev-only-do-not-override-3mqfnx::placeholder {
     font-family: 'Mulish', sans-serif;
     color: rgba(153, 155, 156, 0.842);
-
 }
 
-input::placeholder{
+/* Style Default Input Placeholder Text */
+input::placeholder {
     color: rgba(153, 155, 156, 0.842);
-
 }
 
-
-/* Webkit-based Browsers (Chrome, Safari) */
-/* scrollbar width */
-
+/* Styling Scrollbar for Webkit-based Browsers */
+/* Scrollbar Width */
 ::-webkit-scrollbar {
+    width: 5px;
+}
 
-    width: 5px; /* Set your desired scrollbar width */
-  }
-  
-  /* scrollbar track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #c9c8c8; 
     border-radius: 80px;
-    /* Set your desired track color */
-  }
-  
-  /* scrollbar handle */
-  ::-webkit-scrollbar-thumb {
-    border-radius: 80px;
+}
+option{
+    font-size: 14px;
+    overflow: hidden;
+}
 
-    background: #cecbcb; /* Set your desired handle color */
-  }
-  
-  /* scrollbar handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #cccaca; /* Set your desired handle color on hover */
-  }
-  
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 80px;
+    background: #979494;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cccaca;
+}
 
  
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-picker{
-    width: 280px;
+/* Custom Styles for .ant-picker Class */
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker {
+    width: 250px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
- 
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
+}
+
+/* Center Pagination in Responsive Design */
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
     justify-content: center;
-  }
+}
 
-
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
-    padding:0px 10px ;
+/* Styling for Ant Table Component */
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
+    padding: 0px 10px;
     font-size: 14px;
+}
 
-  }
-
-  
- 
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+/* Styling for Table Cells, Headers, and Footers */
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
     position: relative;
-    padding: 9gpx 10px;
+    padding: 10px 5px;
     text-align: center;
+    font-size: 11px;
     color: black;
     overflow-wrap: break-word;
 }
 
-
-@media (max-width:800px){
-  
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
-    justify-content: center;
-  }
-
-
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
-    padding:0px 5px ;
-    font-size: 10px;
-
-  }
-
-  
  
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
-    position: relative;
-    padding: 5px 0px;
-    text-align: center;
-    color: black;
-    overflow-wrap: break-word;
-}
-
-
-}
-
-
-
-@media (max-width:600px){
-  
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
-    justify-content: center;
-    margin: 10px 0px;
-  }
-
-
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
-    padding:20px 5px ;
-    font-size: 10px;
-
-  }
-
-  
  
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
-    position: relative;
-    padding:10px 5px;
-    text-align: center;
-    color: black;
-    overflow-wrap: break-word;
-}
 
-
+@media (max-width: 900px) {
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+        position: relative;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 10px;
+        color: black;
+        overflow-wrap: break-word;
+    }
+    
 }

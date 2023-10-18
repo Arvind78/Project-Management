@@ -1,0 +1,263 @@
+/* MobileDataPreview.module.css */
+
+/* Styles for the parent container */
+.parentDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px; /* Apply padding to the parent container */
+}
+
+/* Styles for the data preview box */
+.box-show {
+  width: 50%; /* Set the initial width of the box */
+  height: auto; /* Set the initial height of the box */
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  border: 0.5px solid rgb(196, 192, 192);
+  margin-top: 30px;
+  padding: 20px;
+  margin: 0px 10px;
+  box-shadow: 0px 0px 10px 0px ghostwhite; /* Apply box shadow */
+  transition: all 0.3s ease; /* Add smooth transition effects */
+
+}
+
+/* Hover effect for the data preview box */
+.box-show:hover {
+  border-color: blue; /* Change border color on hover */
+  transform: scale(1.05); /*  Scale the box slightly on hover */
+}
+
+/* Styles for the pagination component */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 20px 0px; /* Apply margin to the pagination component */
+}
+.deteilsinfo {
+ /* padding: 10px 0px; */
+}
+
+.heading   h3 {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+.heading   p {
+  font-size:15px;
+  padding: 5px 0px;
+}
+
+.deteilsinfo div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 5px 5PX;
+gap: 14px;
+  font-size: 18px;
+}
+
+.btnGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .parentDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0px; /* Apply padding to the parent container */
+  }
+  .box-show {
+    width: 45%; /* Set the initial width of the box */
+    height: auto; /* Set the initial height of the box */
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    border: 0.5px solid rgb(196, 192, 192);
+    margin-top: 30px;
+    padding: 20px;
+    margin:20px 10px;
+    flex-grow: 200;
+    flex-shrink: 1;
+    box-shadow: 0px 0px 10px 0px ghostwhite; /* Apply box shadow */
+    transition: all 0.3s ease; /* Add smooth transition effects */
+  
+  }
+  
+   
+   .heading   h3 {
+     font-size: 16px;
+     padding: 5px 0px;
+   }
+   
+   .heading   p {
+     font-size:13px;
+     padding: 4px 0px;
+   }
+   
+   .deteilsinfo div{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     margin: 10px 0px;
+     padding: 5px 5PX;
+   gap:4px;
+     font-size: 14px;
+   }
+  
+}
+
+
+/* Media query for screens with a maximum width of 680px */
+@media (max-width: 680px) {
+  .parentDiv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+  }
+
+  .box-show {
+      width:85%; /* Set width to 75% on smaller screens */
+      height: auto; /* Set height to 500px on smaller screens */
+      border: 0.5px solid rgb(196, 192, 192);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      padding: 40px;
+      margin: 10px 10px;
+      box-shadow: 0px 0px 10px 0px rgba(236, 233, 233, 0.5);
+      transition: all 0.3s ease;
+  }
+
+  .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin: 50px 0px; /* Apply larger margin on smaller screens */
+  }
+
+     
+  .heading   h3 {
+    font-size: 20px;
+    padding: 5px 0px;
+  }
+  
+  .heading   p {
+    font-size:16px;
+    padding: 4px 0px;
+  }
+  
+  .deteilsinfo div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px 5PX;
+  gap:20px;
+    font-size: 18px;
+  }
+  
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media (max-width: 500px) {
+  .parentDiv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+  }
+
+  .box-show {
+      width: 90%; /* Set width to 90% on even smaller screens */
+      height: auto;
+      border: 0.5px solid rgb(196, 192, 192);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      padding: 20px;
+      margin: 10px 10px;
+      box-shadow: 0px 0px 10px 0px rgba(236, 233, 233, 0.5);
+      transition: all 0.3s ease;
+  }
+  @media (max-width: 430px) {
+    .parentDiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+  
+    .box-show {
+        width:95%; /* Set width to 75% on smaller screens */
+        height: auto; /* Set height to 500px on smaller screens */
+        border: 0.5px solid rgb(196, 192, 192);
+        border-radius: 10px;
+       
+        padding: 40px 14px;
+        margin: 10px 10px;
+        box-shadow: 0px 0px 10px 0px rgba(236, 233, 233, 0.5);
+        transition: all 0.3s ease;
+    }
+  
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px 0px; /* Apply larger margin on smaller screens */
+    }
+  
+       
+    .heading   h3 {
+      font-size: 15px;
+      padding: 5px 0px;
+    }
+    
+    .heading   p {
+      font-size:13px;
+      padding: 4px 0px;
+    }
+    
+    .deteilsinfo div{
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      margin: 10px 0px;
+      padding: 5px 5PX;
+    gap:5px;
+      font-size: 14px;
+    }
+    
+  }
+  
+}

@@ -1,25 +1,124 @@
-.btnGroup{
- 
+/* Button Group Styles */
+.btnGroup {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.tableContainer{
+
+/* Table Container Styles */
+.tableContainer {
     height: 100%;
     width: 100%;
- 
-
 }
 
+/* Search Bar Styles */
+.searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    margin:5px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 44;
+}
 
-@media (max-width:600px){
-    .btnGroup{
+/* Sort Option Styles */
+.sortOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    border-bottom: 1px solid #474447;
+    padding: 5px 0px;
+}
+
+/* Sort Option Select Styles */
+.sortOptionSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    border: none;
+    padding: 5px 0px;
+}
+
+/* Sort Option Input Styles */
+.sortOptionInput {
+    padding: 0px 2px;
+    border: none;
+    outline: none;
+}
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .sortToggle {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .arrow {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .sortOptions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sortOptions li {
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .sortOptions li:hover {
+    text-decoration: underline;
+  }
+  
  
+/* Responsive Styles for Button Group */
+@media (max-width: 600px) {
+    .btnGroup {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 10px;
-      }
+    }
+    .searchBar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5px;
+        margin: 10px 0px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .btnGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .searchBar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
 }

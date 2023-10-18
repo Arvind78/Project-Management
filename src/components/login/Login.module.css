@@ -162,6 +162,71 @@
     font-weight: 500;
 }
 
+/* Popup Container Styles */
+.popupContainer {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+ padding: 0px 10px;
+  }
+  
+  
+  /* Popup Styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Popup Content Styles */
+  .popupContent {
+    background-color: white;
+    padding: 20px;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close Button Styles*/
+  .closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .forgetBtn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .emailGroup{
+    display: flex;
+   flex-direction: column;
+   gap: 5px;
+ width: 100%;
+
+   margin: 10px 0px;
+  }
+   
+  .emailGroup input{
+ padding: 10px ;
+ margin:5px 0px;
+ width: 100%;
+ outline: none;
+ border: 1px solid #e0dedecb;
+ border-radius: 4px;
+  }
+  
 /* Media queries for responsive design */
 /* For screens up to 1050px wide */
 @media (max-width: 1350px) {
@@ -184,7 +249,10 @@
     }
     .header {
         height:50%;
-    }   
+    }  
+    .popupContent {
+        width: 45%;
+    } 
 }
 
 /* For screens up to 930px wide */
@@ -193,6 +261,9 @@
     .formContainer {
         /* Updated styles for smaller screens */
         width: 50%;
+    }
+    .popupContent {
+        width: 55%;
     }
 }
 
@@ -204,6 +275,9 @@
         /* Updated styles for smaller screens */
         width:55%;
     }
+    .popupContent {
+        width: 55%;
+    }
 }
 
 /* For screens up to 600px wide */
@@ -213,6 +287,9 @@
         /* Updated styles for smaller screens */
         width:60%;
     }
+    .popupContent {
+        width: 65%;
+    } 
 }
 
 /* For screens up to 550px wide */
@@ -222,6 +299,9 @@
         /* Updated styles for smaller screens */
         width:70%;
     }
+    .popupContent {
+        width: 75%;
+    } 
 }
 
 /* For screens up to 450px wide */
@@ -241,6 +321,9 @@
         /* Updated styles for smaller screens */
         height: 40%;
     }
+    .popupContent {
+        width: 85%;
+    } 
 }
 
 /* For screens up to 350px wide */
@@ -269,4 +352,8 @@
         gap: 5px;
         font-size: 14px;
     }
+
+    .popupContent {
+        width: 95%;
+    } 
 }
