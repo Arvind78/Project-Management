@@ -10,7 +10,7 @@ const ShowProject = () => {
   const [searchValue, setSearchValue] = useState("");
   const [windowWidth, setWindowWidth] = useState("")
   const [selectedSortOption, setSelectedSortOption] = useState(''); // State to track selected sorting option
-
+  const [loading,setLoading] =useState(false)
   useEffect(() => {
 
     setInterval(() => {
@@ -21,11 +21,14 @@ const ShowProject = () => {
 
   // Fetch project data from the API
   const getData = () => {
+    setLoading(true)
     axios.get("https://project-manegement.onrender.com/api/allproject")
       .then((res) => {
         setData(res.data.projects);
+        setLoading(false)
       })
       .catch((err) => {
+        setLoading(false)
         throw err;
       });
   };
@@ -191,10 +194,10 @@ const ShowProject = () => {
       {(windowWidth > 810) ?
         <div className={styles.tableContainer}>
           {/* Table component */}
-          <Table dataSource={dataSource} columns={columns} />
+          <Table dataSource={dataSource}  loading={loading} columns={columns} />
         </div>
         :
-        <MobileDataPreview data={data} handleStatus={handleStatus} />
+        <MobileDataPreview data={data}  handleStatus={handleStatus} />
       }
     </>
   );
