@@ -22,12 +22,15 @@ const ProjectChart = ({ data }) => {
     return { department, total, closed };
   });
 
+  // Calculate suitable font size based on the number of unique departments
+  const fontSize = Math.min(14, 400 / uniqueDepartments.length);
+
   return (
     <ResponsiveContainer width="100%" height={300}>
       {/* Bar Chart displaying project counts based on departments */}
       <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
         {/* X-Axis representing department names */}
-        <XAxis dataKey="department" />
+        <XAxis dataKey="department" interval={0} tick={{ fontSize }} />
         {/* Y-Axis for project counts */}
         <YAxis />
         {/* Tooltip to display detailed information on hover */}
