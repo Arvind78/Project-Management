@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import styles from './MobileDataPreview.module.css'; // Import the CSS module
 import {FaAngleLeft ,FaAngleRight} from "react-icons/fa6"
 import { Button } from 'antd';
-const MobileDataPreview = ({ data ,handleStatus}) => {
+const MobileDataPreview = ({ data ,handleStatus,loading}) => {
   const itemsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -24,6 +24,8 @@ const MobileDataPreview = ({ data ,handleStatus}) => {
   return (
     <>
     <div className={styles.parentDiv}>
+  
+   
       {currentItems.map((item, index) => (
         <div className={styles['box-show']} key={index}>
           <div className={styles.heading}>
@@ -64,6 +66,8 @@ const MobileDataPreview = ({ data ,handleStatus}) => {
       ))}
     
     </div>
+    
+    {(data.lengt>0) &&
       <div className={styles.pagination}>
       <button onClick={handlePrevPage} disabled={currentPage === 1}>
       <FaAngleLeft size={18} /> 
@@ -73,6 +77,14 @@ const MobileDataPreview = ({ data ,handleStatus}) => {
       <FaAngleRight size={18}/> 
       </button>
     </div>
+}
+ {loading &&
+ <div className={styles.loaderCoantainer}>
+        <div className={styles.loader}></div> 
+      
+       
+        </div>  
+      }
     </>
   );
 };

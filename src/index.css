@@ -9,6 +9,9 @@
     font-family: 'Mulish', sans-serif;
 }
 
+select{
+    background-color:#fff;
+}
 /* Style Custom Input Field with Specific Class */
 input.ant-input.css-dev-only-do-not-override-3mqfnx {
     font-family: 'Mulish', sans-serif;

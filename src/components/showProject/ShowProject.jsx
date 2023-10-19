@@ -197,7 +197,7 @@ const ShowProject = () => {
           <Table dataSource={dataSource}  loading={loading} columns={columns} />
         </div>
         :
-        <MobileDataPreview data={data}  handleStatus={handleStatus} />
+        <MobileDataPreview data={data} loading={loading}  handleStatus={handleStatus} />
       }
     </>
   );
