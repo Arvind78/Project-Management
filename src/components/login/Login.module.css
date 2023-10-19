@@ -304,7 +304,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 0px 0px 0px 30px; /* Border radius for the bottom-right corner */
+        border-radius: 0px 0px 0px 35px; /* Border radius for the bottom-right corner */
         display: block;
         position: relative;
     }
@@ -337,7 +337,7 @@
     
 /* Styles for the logo heading */
 .logoHeading {
-    font-size:15px;
+    font-size:16px;
     color: #ffffff; /* White text color */
 }
 
