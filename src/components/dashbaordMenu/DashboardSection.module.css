@@ -214,35 +214,6 @@
       height: 25px;
     }
   }
-  /* DashboardSection.module.css */
-
-/* ... other styles ... */
-
-/* Media query for screens less than 590px width */
-@media (max-width: 590px) {
-    .DashboardSection {
-      display: flex;
-      flex-direction: column;
-      height: 100vh; /* Ensure the container takes the full height of the viewport */
-    }
-  
-    .sideMenuSection {
-      flex: 0 0 auto; /* Allow the sidebar to shrink and grow as needed */
-      position: sticky;
-      bottom: 0;
-      background-color: #fff; /* Set the background color of the sticky section */
-      z-index: 1; /* Ensure the sticky section stays on top of the content */
-      overflow-y: auto; /* Enable vertical scrolling when content exceeds the viewport */
-    }
-  
-    .contentSection {
-      flex: 1; /* Allow the content section to grow and take remaining vertical space */
-      overflow-y: auto; /* Enable vertical scrolling for the content section */
-    }
-  }
-  
-  /* ... other styles ... */
-  
   
   /* Media query for even smaller screens */
   @media (max-width: 480px) {
