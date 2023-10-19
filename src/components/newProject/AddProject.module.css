@@ -169,31 +169,7 @@ option {
         flex-direction: column;
         gap: 3px;
     }
-/* customDateInput.module.css */
 
-.customDateInput {
-    position: relative;
-  }
-  
-  .customDateInput input[type="date"] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .customDateInput .customPlaceholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  }
-  
-  .customDateInput input[type="date"]:focus + .customPlaceholder,
-  .customDateInput input[type="date"]:valid + .customPlaceholder {
-    display: none;
-  }
-  
     .formGroup input {
         width: 100%;
         width: 45%;

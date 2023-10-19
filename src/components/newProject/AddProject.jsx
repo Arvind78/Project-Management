@@ -258,29 +258,15 @@ const AddProject = () => {
         </div>
         <div className={styles.formGroup2}>
           <div className={styles.fieldGroup}>
-          <div className={styles.customDateInput}>
-      <input type="date" id="dateInput" />
-      <label htmlFor="dateInput" className={styles.customPlaceholder}>
-        Select a Date
-      </label>
-    </div>
             <label htmlFor="startDate" >Start Date as Project Plan</label>
             <input type='date' placeholder="Choose start date" className={styles.select} name="startDate" value={projectDetails.startDate} onChange={handleInputChange} />
 
           </div>
 
           <div className={styles.fieldGroup}>
-          <div className={styles.customDateInput}>
-      <input type="date" id="dateInput" />
-      <label htmlFor="dateInput" className={styles.customPlaceholder}>
-        Select a Date
-      </label>
-    </div>
             <label htmlFor="endData">End Date as Project Plan</label>
             <input type='date' placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
           </div>
-
-
 
           <div className={styles.fieldGroup}>
             <label htmlFor="location">Location</label>
