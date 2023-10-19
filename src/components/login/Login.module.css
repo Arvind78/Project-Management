@@ -1,20 +1,26 @@
 /* Set base styles for the main container */
 .mainContainer {
-    height: 100vh; /* 100% of the viewport height */
-    width: 100vw; /* 100% of the viewport width */
-    background-color: #ffffff; /* White background color */
+    height: 100vh;
+    /* 100% of the viewport height */
+    width: 100vw;
+    /* 100% of the viewport width */
+    background-color: #ffffff;
+    /* White background color */
     overflow: hidden;
 }
 
 /* Styles for the header section */
 .header {
-    height: 50%; /* 50% of the parent container */
+    height: 50%;
+    /* 50% of the parent container */
     width: 100%;
-    background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
+    background-image: url("../../assets/Header-bg.svg");
+    /* Background image for the header */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 0px 0px 0px 80px; /* Border radius for the bottom-right corner */
+    border-radius: 0px 0px 0px 50px;
+    /* Border radius for the bottom-right corner */
     display: block;
     position: relative;
 }
@@ -32,24 +38,27 @@
 .formContainer {
     height: auto;
     padding: 15px 10px;
-    width: 28%;
+    width:32%;
     position: absolute;
     top: 8%;
 }
 
 /* Styles for the logo heading */
 .logoHeading {
-    
-    color: #ffffff; /* White text color */
+
+    color: #ffffff;
+    /* White text color */
 }
 
 /* Styles for form elements */
 .form {
     margin: 15px 0px;
-    background-color: #ffffff; /* White background color */
+    background-color: #ffffff;
+    /* White background color */
     border-radius: 8px;
     padding: 10px 5px 30px 5px;
-    box-shadow: 0px 0px 5px 0px rgba(145, 143, 143, 0.75); /* Box shadow for the form */
+    box-shadow: 0px 0px 5px 0px rgba(145, 143, 143, 0.75);
+    /* Box shadow for the form */
 }
 
 /* Styles for form headings */
@@ -57,11 +66,12 @@
     text-align: center;
     padding: 20px 0px;
     font-size: 15px;
-    color: #2b2929c7; /* Semi-transparent text color */
+    color: #2b2929c7;
+    /* Semi-transparent text color */
 }
 
 /* styles for from logos */
-.formLogo{
+.formLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,17 +79,18 @@
     gap: 5px;
     font-size: 18px;
 }
+
 /* Styles for form input groups */
 .formGroup {
     display: flex;
     flex-direction: column;
-    padding: 5px 20px;
+    padding: 10px 20px;
     gap: 5px;
 }
 
 /* Styles for form inputs */
 .formInput {
-    padding: 10px;
+    padding: 11px;
     border-radius: 5px;
     border: 0.5px solid #dad7d7c7;
     outline: none;
@@ -87,18 +98,20 @@
 
 /* Styles for error messages */
 .error {
-    color: red; /* Red error text color */
+    color: red;
+    /* Red error text color */
     font-size: 14px;
     padding: 0px 5px;
 }
 
 /* Styles for form inputs with errors */
-.errorFormInput{
+.errorFormInput {
     padding: 10px;
     border-radius: 5px;
     border: 0.5px solid #da0303c7;
     outline: none;
 }
+
 .errorformInputPassword {
     padding: 0px;
     border-radius: 5px;
@@ -109,7 +122,7 @@
 
 /* Styles for password input */
 .formInputPassword {
-    padding: 7px;
+    padding:8px;
     border-radius: 5px;
     border: 0.5px solid #dad7d7c7;
     outline: none;
@@ -123,7 +136,8 @@
     text-decoration: none;
     font-size: 15px;
     padding-bottom: 10px;
-    color: #1475cf; /* Link color */
+    color: #1475cf;
+    /* Link color */
 }
 
 /* Styles for form submission button */
@@ -135,15 +149,17 @@
 
 .submitButton {
     padding: 10px;
-    color: #ffffff; /* White text color */
-    background-color: #1475cf; /* Button background color */
+    color: #ffffff;
+    /* White text color */
+    background-color: #1475cf;
+    /* Button background color */
     outline: none;
     border: none;
     display: flex;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width:40%;
     font-size: 16px;
     border-radius: 30px;
     cursor: pointer;
@@ -152,28 +168,30 @@
 /* Button hover effect */
 .submitButton:hover {
     background-color: #0486ff;
-    transition: 400ms ease-in; /* Smooth transition effect */
+    transition: 400ms ease-in;
+    /* Smooth transition effect */
 }
 
 /* Styles for error status messages */
 .errorStatus {
     text-align: center;
-    margin: 30px 0px;
-    font-size: 16px;
+ 
     font-weight: 500;
+    z-index: 47;
+    margin-top: 15%;
 }
 
 /* Popup Container Styles */
 .popupContainer {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     align-items: center;
- padding: 0px 10px;
-  }
-  
-  
-  /* Popup Styles */
-  .popup {
+    padding: 0px 10px;
+}
+
+
+/* Popup Styles */
+.popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -183,62 +201,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Popup Content Styles */
-  .popupContent {
+}
+
+/* Popup Content Styles */
+.popupContent {
     background-color: white;
     padding: 20px;
     width: 35%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Close Button Styles*/
-  .closeButton {
+}
+
+/* Close Button Styles*/
+.closeButton {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-  .forgetBtn{
+}
+
+.forgetBtn {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 15px;
-  }
-  
-  .emailGroup{
-    display: flex;
-   flex-direction: column;
-   gap: 5px;
- width: 100%;
+}
 
-   margin: 10px 0px;
-  }
-   
-  .emailGroup input{
- padding: 10px ;
- margin:5px 0px;
- width: 100%;
- outline: none;
- border: 1px solid #e0dedecb;
- border-radius: 4px;
-  }
-  
+.emailGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    margin: 10px 0px;
+}
+
+.emailGroup input {
+    padding: 10px;
+    margin: 5px 0px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #e0dedecb;
+    border-radius: 4px;
+}
+
 /* Media queries for responsive design */
 /* For screens up to 1050px wide */
 @media (max-width: 1350px) {
 
     .formContainer {
         /* Updated styles for smaller screens */
-        width:40%;
+        width: 40%;
     }
+
     .header {
-        height:50%;
-    }   
+        height: 50%;
+    }
 }
 
 /* For screens up to 1050px wide */
@@ -246,14 +265,16 @@
 
     .formContainer {
         /* Updated styles for smaller screens */
-        width:40%;
+        width: 40%;
     }
+
     .header {
-        height:50%;
-    }  
+        height: 50%;
+    }
+
     .popupContent {
         width: 45%;
-    } 
+    }
 }
 
 /* For screens up to 930px wide */
@@ -263,6 +284,7 @@
         /* Updated styles for smaller screens */
         width: 50%;
     }
+
     .popupContent {
         width: 55%;
     }
@@ -270,12 +292,13 @@
 
 /* For screens up to 780px wide */
 @media (max-width: 780px) {
-    
+
 
     .formContainer {
         /* Updated styles for smaller screens */
-        width:55%;
+        width: 55%;
     }
+
     .popupContent {
         width: 55%;
     }
@@ -283,45 +306,49 @@
 
 /* For screens up to 600px wide */
 @media (max-width: 600px) {
-  
+
     .formContainer {
         /* Updated styles for smaller screens */
-        width:60%;
+        width: 60%;
     }
+
     .popupContent {
         width: 65%;
-    } 
+    }
 }
 
- 
+
 /* For screens up to 550px wide */
 @media (max-width:550px) {
 
     .header {
-        height:30%; /* 50% of the parent container */
+        height: 30%;
+        /* 50% of the parent container */
         width: 100%;
-        background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
+        background-image: url("../../assets/Header-bg.svg");
+        /* Background image for the header */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 0px 0px 0px 35px; /* Border radius for the bottom-right corner */
+        border-radius: 0px 0px 0px 35px;
+        /* Border radius for the bottom-right corner */
         display: block;
         position: relative;
     }
-    
+
     /* Styles for the login container */
     .loginContainer {
-        height:70%;
+        height: 70%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-  
+
     }
-    
-     
+
+
     .formContainer {
-        height:22%;
+        height: 22%;
         width: 100%;
     }
 
@@ -330,119 +357,125 @@
         width: 85%;
     }
 
-    
+
     .popupContent {
         width: 85%;
-    } 
-    
-/* Styles for the logo heading */
-.logoHeading {
-    font-size:16px;
-    color: #ffffff; /* White text color */
-}
+    }
 
-/* Styles for form elements */
-.form {
-    margin: 20px 0px;
-    background-color: none; /* White background color */
-    border-radius: 8px;
-    padding: 10px 5px 20px 5px;
-    box-shadow: none; 
-    width: 100%;
-    position: absolute;
-    top:100%;
-    left: 0;
-    right: 0;
-    /* Box shadow for the form */
-}
+    /* Styles for the logo heading */
+    .logoHeading {
+        font-size: 16px;
+        color: #ffffff;
+        /* White text color */
+    }
 
-/* Styles for form headings */
-.formHeading {
-    text-align: center;
-    padding: 25px 20px;
-    font-size: 18px;
-    text-align: left;
-    color: #2b2929c7; /* Semi-transparent text color */
-}
+    /* Styles for form elements */
+    .form {
+        margin: 20px 0px;
+        background-color: none;
+        /* White background color */
+        border-radius: 8px;
+        padding: 10px 5px 20px 5px;
+        box-shadow: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* Box shadow for the form */
+    }
 
-/* styles for from logos */
-.formLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 0px 100px 0px;
-    font-size: 18px;
-    position: absolute;
- top:30%;
- bottom: 0%;
-left: 0;
-right: 0;
-}
-/* Styles for form input groups */
-.formGroup {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    gap: 5px;
-}
+    /* Styles for form headings */
+    .formHeading {
+        text-align: center;
+        padding: 25px 20px;
+        font-size: 18px;
+        text-align: left;
+        color: #2b2929c7;
+        /* Semi-transparent text color */
+    }
 
-/* Styles for form inputs */
-.formInput {
-    padding: 12px;
-    border-radius: 5px;
-    border: 0.5px solid #dad7d7c7;
-    outline: none;
-}
+    /* styles for from logos */
+    .formLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0px 0px 100px 0px;
+        font-size: 18px;
+        position: absolute;
+        top: 30%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+    }
 
-.formInputPassword {
-    padding:10px;
-    border-radius: 5px;
-    border: 0.5px solid #dad7d7c7;
-    outline: none;
-    position: relative;
-    background-color: transparent;
-}
-.errorStatus{
-    position: absolute;
-    top:86%;
-    bottom: 4%;
-    left: 0%;
-    right: 0%;
-    z-index: 9;
-}
+    /* Styles for form input groups */
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 5px;
+    }
+
+    /* Styles for form inputs */
+    .formInput {
+        padding: 12px;
+        border-radius: 5px;
+        border: 0.5px solid #dad7d7c7;
+        outline: none;
+    }
+
+    .formInputPassword {
+        padding: 10px;
+        border-radius: 5px;
+        border: 0.5px solid #dad7d7c7;
+        outline: none;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .errorStatus {
+        position: absolute;
+        top: 86%;
+        bottom: 4%;
+        left: 0%;
+        right: 0%;
+        z-index: 9;
+    }
 }
 
 @media (max-width:350px) {
 
     .header {
-        height:30%; /* 50% of the parent container */
+        height: 30%;
+        /* 50% of the parent container */
         width: 100%;
-        background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
+        background-image: url("../../assets/Header-bg.svg");
+        /* Background image for the header */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 0px 0px 0px 80px; /* Border radius for the bottom-right corner */
+        border-radius: 0px 0px 0px 80px;
+        /* Border radius for the bottom-right corner */
         display: block;
 
         position: relative;
     }
-    
+
     /* Styles for the login container */
     .loginContainer {
-        height:70%;
+        height: 70%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-  
+
     }
-    
-     
+
     .formContainer {
-        height:22%;
-      
+        height: 22%;
         width: 100%;
     }
 
@@ -451,78 +484,82 @@ right: 0;
         width: 95%;
     }
 
-    
     .popupContent {
         width: 85%;
-    } 
-    
-/* Styles for the logo heading */
-.logoHeading {
-   font-size: 14px;
-    color: #ffffff; /* White text color */
-}
+    }
 
-/* Styles for form elements */
-.form {
-    margin: 20px 0px;
-    background-color:none; /* White background color */
-    border-radius: 8px;
-    padding: 10px 5px 20px 5px;
-    box-shadow: none; 
-    width: 100%;
-    position: absolute;
-    top:100%;
-    left: 0;
-    right: 0;
-    /* Box shadow for the form */
-}
+    /* Styles for the logo heading */
+    .logoHeading {
+        font-size: 14px;
+        color: #ffffff;
+        /* White text color */
+    }
 
-/* Styles for form headings */
-.formHeading {
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 15px;
-    text-align: left;
-    color: #2b2929c7; /* Semi-transparent text color */
-}
+    /* Styles for form elements */
+    .form {
+        margin: 20px 0px;
+        background-color: none;
+        /* White background color */
+        border-radius: 8px;
+        padding: 10px 5px 20px 5px;
+        box-shadow: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* Box shadow for the form */
+    }
 
-/* styles for from logos */
-.formLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 0px 100px 0px;
-    font-size: 18px;
-    position: absolute;
- top:30%;
- bottom: 0%;
-left: 0;
-right: 0;
-}
-/* Styles for form input groups */
-.formGroup {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 10px;
-    gap: 5px;
-}
+    /* Styles for form headings */
+    .formHeading {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 15px;
+        text-align: left;
+        color: #2b2929c7;
+        /* Semi-transparent text color */
+    }
 
-/* Styles for form inputs */
-.formInput {
-    padding: 10px;
-    border-radius: 5px;
-    border: 0.5px solid #dad7d7c7;
-    outline: none;
-}
-.errorStatus{
-    position: absolute;
-    top:80%;
-    bottom: 4%;
-    left: 0%;
-    right: 0%;
-    z-index: 9;
-    font-size: 14px;
-}
+    /* styles for from logos */
+    .formLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0px 0px 100px 0px;
+        font-size: 18px;
+        position: absolute;
+        top: 30%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+    }
+
+    /* Styles for form input groups */
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        gap: 5px;
+    }
+
+    /* Styles for form inputs */
+    .formInput {
+        padding: 10px;
+        border-radius: 5px;
+        border: 0.5px solid #dad7d7c7;
+        outline: none;
+    }
+
+    .errorStatus {
+        position: absolute;
+        top: 80%;
+        bottom: 4%;
+        left: 0%;
+        right: 0%;
+        z-index: 9;
+        font-size: 14px;
+    }
 }

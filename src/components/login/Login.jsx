@@ -20,7 +20,7 @@ const Login = () => {
   const [formErrors, setFormErrors] = useState({
     email: null,
     password: null,
-    loginStatus:null, // Initial login status message
+    loginStatus: "jaanu kahjjjja", // Initial login status message
     status: null
   });
 
@@ -135,17 +135,17 @@ const Login = () => {
               <button type="submit" className={styles.submitButton}>
                 {(loading) ? "Loading..." : "Login"}
               </button>
-              
+
             </div>
 
           </form>
-        
+
         </div>
         {formErrors.loginStatus && <p style={{
-            color: (formErrors.status == true) ? "green"
-              : (formErrors.status == false) ? "red" : "black"
-          }}
-            className={styles.errorStatus}>{formErrors.loginStatus}</p>}
+          color: (formErrors.status == true) ? "green"
+            : (formErrors.status == false) ? "red" : "black"
+        }}
+          className={styles.errorStatus}>{formErrors.loginStatus}</p>}
       </div>
     </div>
   );
@@ -205,7 +205,7 @@ const Popup = () => {
       })
 
     } else {
-      if (newPassword=== "" ||  newPassword===null) {
+      if (newPassword === "" || newPassword === null) {
         api.error({
           placement: "top",
           message: "New Password Is Required ",
@@ -213,9 +213,9 @@ const Popup = () => {
 
         })
         return false
-      } 
+      }
 
-      if (confirmPassword=== "" ||  confirmPassword===null) {
+      if (confirmPassword === "" || confirmPassword === null) {
         api.error({
           placement: "top",
           message: "Confirm Password Is Required ",
@@ -223,8 +223,8 @@ const Popup = () => {
 
         })
         return false
-      } 
-      if (newPassword  !==confirmPassword) {
+      }
+      if (newPassword !== confirmPassword) {
         api.error({
           placement: "top",
           message: "Confirm Password Doesn't Match",
@@ -232,27 +232,22 @@ const Popup = () => {
 
         })
         return false
-      } 
-      
-      
+      }
+
+
       else {
         setLoading(true)
 
         axios.post("https://project-manegement.onrender.com/api/forget", { userId, newPassword }).then((res) => {
-
           api.success({
             placement: "top",
             message: "Reset password Success",
             description: res.data.message
-
           })
           setLoading(false)
-
         }).catch((err) => {
           setLoading(false)
-
           throw err
-
         })
       }
       // reset the all fields
@@ -266,7 +261,7 @@ const Popup = () => {
 
   return (
     <div className={styles.popupContainer}>
-      <a style={{cursor:"pointer"}} onClick={togglePopup} className={styles.forgetPassword}>
+      <a style={{ cursor: "pointer" }} onClick={togglePopup} className={styles.forgetPassword}>
         Forgot Password?
       </a>
       {contextHolder}
@@ -322,7 +317,7 @@ const Popup = () => {
               <Button type="primary" danger onClick={togglePopup}>
                 Close
               </Button>
-              <Button type="primary" onClick={handleForgetPassword}>{(userId) ?(loading)?"Loading...": "Forget Now" : (loading)?"Loading...":"Verify"}</Button>
+              <Button type="primary" onClick={handleForgetPassword}>{(userId) ? (loading) ? "Loading..." : "Forget Now" : (loading) ? "Loading..." : "Verify"}</Button>
             </div>
           </div>
         </div>
