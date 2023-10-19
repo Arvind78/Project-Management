@@ -8,23 +8,18 @@
 
 .sideMenuSection {
     background-color: rgb(250, 249, 247);
-    width: 230px;
+    width:80px;
 
     font-size: 16px;
     padding: 20px 10px;
     display: flex;
-    flex-direction: column;
+ justify-content: center;
 
     align-items: center;
 }
 
 .sideMenu div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
-    padding: 20px 0px;
-    cursor: pointer;
+   padding:15px 0px;
 
 }
 
@@ -43,15 +38,7 @@
 
 }
 
-
-.logoutSection {
-    height: 89vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+ 
 .contentHeader {
     height: 80px;
     width: 100%;

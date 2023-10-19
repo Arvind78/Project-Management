@@ -10,7 +10,14 @@ import AddProject from '../newProject/AddProject.jsx';
 import ShowProject from '../showProject/ShowProject.jsx';
 import logo from '../../assets/Logo.svg';
 import arrow from '../../assets/back arrow.svg';
+import dashActive from '../../assets/Dashboard-active.svg';
+import dashImg from '../../assets/Dashboard.svg';
+import projectActive from '../../assets/Project-list-active.svg';
+import project from '../../assets/Project-list.svg';
+import createActive from '../../assets/create-project-active.svg';
+import create from '../../assets/create-project.svg';
 
+import logOut from '../../assets/Logout.svg'
 const DashboardSection = () => {
   const navigate = useNavigate();
   const [path, setPath] = useState('dashboard');
@@ -38,31 +45,37 @@ const DashboardSection = () => {
         <div className={styles.sideMenu}>
           <div onClick={() => handleMenu('dashboard', 'dashboard')}>
             {path === 'dashboard' ? (
-              <AiFillDashboard size={35} color='#1475cf' />
+              <img src={dashActive}  size={35} color='#1475cf' />
             ) : (
-              <AiOutlineDashboard size={35} />
+              <img src={dashImg}  size={35} color='#1475cf' />
+     
             )}
-            <span>Dashboard</span>
+            
           </div>
+          
           <div onClick={() => handleMenu('showProject', 'Project List')}>
             {path === 'showProject' ? (
-              <IoListCircleSharp size={35} color='#1475cf' />
-            ) : (
-              <IoListCircleOutline size={35} />
+             <img src={projectActive}  size={35} color='#1475cf' />
+             ) : (
+               <img src={project}  size={35} color='#1475cf' />
+      
             )}
-            <span>Show Project</span>
+      
           </div>
+          <hr  />
           <div onClick={() => handleMenu('newProject', 'Create Project')}>
             {path === 'newProject' ? (
-              <AiFillPlusCircle size={35} color='#1475cf' />
-            ) : (
-              <AiOutlinePlusCircle size={35} />
+              <img src={createActive}  size={35} color='#1475cf' />
+              ) : (
+                <img src={create}  size={35} color='#1475cf' />
+       
             )}
-            <span>New Project</span>
+         
           </div>
           <div className={styles.logoutSection} onClick={handleLogout}>
-            <HiOutlineLogout size={35} />
-            <span>Logout</span>
+  
+            <img src={logOut}  size={35} color='#1475cf' />
+        
           </div>
         </div>
       </div>
@@ -73,7 +86,7 @@ const DashboardSection = () => {
             <span>{title}</span>
           </div>
           <div className={styles.contentHeaderLogo}>
-            <img src={logo} alt='' />
+           
           </div>
         </div>
         <div className={styles.content}>
