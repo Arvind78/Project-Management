@@ -3,6 +3,7 @@
     height: 100vh; /* 100% of the viewport height */
     width: 100vw; /* 100% of the viewport width */
     background-color: #ffffff; /* White background color */
+    overflow: hidden;
 }
 
 /* Styles for the header section */
@@ -292,68 +293,229 @@
     } 
 }
 
+ 
 /* For screens up to 550px wide */
-@media (max-width: 550px) {
-  
-    .formContainer {
-        /* Updated styles for smaller screens */
-        width:70%;
-    }
-    .popupContent {
-        width: 75%;
-    } 
-}
-
-/* For screens up to 450px wide */
-@media (max-width: 450px) {
-     
-    .formContainer {
-        /* Updated styles for smaller screens */
-        width: 90%;
-    }
-
-    .submitButton {
-        /* Updated styles for smaller screens */
-        width: 95%;
-    }
+@media (max-width:550px) {
 
     .header {
-        /* Updated styles for smaller screens */
-        height: 40%;
-    }
-    .popupContent {
-        width: 85%;
-    } 
-}
+        height:30%; /* 50% of the parent container */
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 0px 80px; /* Border radius for the bottom-right corner */
+        display: block;
 
-/* For screens up to 350px wide */
-@media (max-width: 350px) {
+        position: relative;
+    }
     
-
-    .formContainer {
-        /* Updated styles for smaller screens */
-        width: 90%;
-    }
-
-    .submitButton {
-        /* Updated styles for smaller screens */
-        width: 98%;
-    }
-
-    .header {
-        /* Updated styles for smaller screens */
-        height: 40%;
-    }
-    .formLogo{
+    /* Styles for the login container */
+    .loginContainer {
+        height:70%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 5px;
-        font-size: 14px;
+  
+    }
+    
+     
+    .formContainer {
+        height:20%;
+      
+        width: 100%;
     }
 
+    .submitButton {
+        /* Updated styles for smaller screens */
+        width: 85%;
+    }
+
+    
     .popupContent {
-        width: 95%;
+        width: 85%;
     } 
+    
+/* Styles for the logo heading */
+.logoHeading {
+ 
+    color: #ffffff; /* White text color */
+}
+
+/* Styles for form elements */
+.form {
+    margin: 15px 0px;
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px;
+    padding: 10px 5px 20px 5px;
+    box-shadow: none; 
+    width: 100%;
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    /* Box shadow for the form */
+}
+
+/* Styles for form headings */
+.formHeading {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 18px;
+    text-align: left;
+    color: #2b2929c7; /* Semi-transparent text color */
+}
+
+/* styles for from logos */
+.formLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 0px 100px 0px;
+    font-size: 18px;
+    position: absolute;
+ top:30%;
+ bottom: 0%;
+left: 0;
+right: 0;
+}
+/* Styles for form input groups */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    gap: 5px;
+}
+
+/* Styles for form inputs */
+.formInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #dad7d7c7;
+    outline: none;
+}
+.errorStatus{
+    position: absolute;
+    top:80%;
+    bottom: 4%;
+    left: 0%;
+    right: 0%;
+    z-index: 9;
+}
+}
+
+@media (max-width:350px) {
+
+    .header {
+        height:30%; /* 50% of the parent container */
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg"); /* Background image for the header */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 0px 80px; /* Border radius for the bottom-right corner */
+        display: block;
+
+        position: relative;
+    }
+    
+    /* Styles for the login container */
+    .loginContainer {
+        height:70%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+    }
+    
+     
+    .formContainer {
+        height:21%;
+      
+        width: 100%;
+    }
+
+    .submitButton {
+        /* Updated styles for smaller screens */
+        width: 95%;
+    }
+
+    
+    .popupContent {
+        width: 85%;
+    } 
+    
+/* Styles for the logo heading */
+.logoHeading {
+   font-size: 14px;
+    color: #ffffff; /* White text color */
+}
+
+/* Styles for form elements */
+.form {
+    margin: 15px 0px;
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px;
+    padding: 10px 5px 20px 5px;
+    box-shadow: none; 
+    width: 100%;
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    /* Box shadow for the form */
+}
+
+/* Styles for form headings */
+.formHeading {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 15px;
+    text-align: left;
+    color: #2b2929c7; /* Semi-transparent text color */
+}
+
+/* styles for from logos */
+.formLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 0px 100px 0px;
+    font-size: 18px;
+    position: absolute;
+ top:30%;
+ bottom: 0%;
+left: 0;
+right: 0;
+}
+/* Styles for form input groups */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    gap: 5px;
+}
+
+/* Styles for form inputs */
+.formInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #dad7d7c7;
+    outline: none;
+}
+.errorStatus{
+    position: absolute;
+    top:80%;
+    bottom: 4%;
+    left: 0%;
+    right: 0%;
+    z-index: 9;
+    font-size: 14px;
+}
 }

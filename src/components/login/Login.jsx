@@ -135,14 +135,17 @@ const Login = () => {
               <button type="submit" className={styles.submitButton}>
                 {(loading) ? "Loading..." : "Login"}
               </button>
+              
             </div>
+
           </form>
-          {formErrors.loginStatus && <p style={{
+        
+        </div>
+        {formErrors.loginStatus && <p style={{
             color: (formErrors.status == true) ? "green"
               : (formErrors.status == false) ? "red" : "black"
           }}
             className={styles.errorStatus}>{formErrors.loginStatus}</p>}
-        </div>
       </div>
     </div>
   );
