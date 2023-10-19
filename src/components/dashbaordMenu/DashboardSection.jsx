@@ -86,11 +86,11 @@ const DashboardSection = () => {
             <span>{title}</span>
           </div>
           <div className={styles.contentHeaderLogo}>
-          <div className={styles.logoutSection} onClick={handleLogout}>
+     
   
-  <img src={logOut}  size={35} color='#1475cf' />
+  <img src={logOut}    style={{height:"35px",width:"35px",color:"-moz-initial",cursor:"pointer"}}  onClick={handleLogout} />
 
-</div>
+ 
           </div>
         </div>
         <div className={styles.content}>

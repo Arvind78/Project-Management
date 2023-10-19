@@ -40,7 +40,7 @@
 
  
 .contentHeader {
-    height: 80px;
+    height: 100px;
     width: 100%;
     background-image: url("../../assets/Header-bg.svg");
     background-repeat: no-repeat;
@@ -48,12 +48,13 @@
     background-size: cover;
     border-radius: 0px 0px 0px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px  5% 0px 0px;
 }
 
 .contentHeader .contentHeaderTitle {
-    width: 50%;
+ 
     display: flex;
     justify-content: start;
     align-items: center;
@@ -68,15 +69,17 @@
     width: 18px;
 }
 
-.contentHeader .contentHeaderLogo {
-    width: 50%;
-    padding: 0px 10px;
+ .contentHeaderLogo img {
+   
+  color: aliceblue;
 }
 
 .contentHeader .contentHeaderLogo img {
     height: 60px;
     width: 60px;
 }
+
+
 @media (max-width:900px) {
     .sideMenuSection {
         background-color: rgb(250, 249, 247);
