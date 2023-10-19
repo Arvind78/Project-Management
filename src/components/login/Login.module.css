@@ -288,6 +288,14 @@
     .popupContent {
         width: 45%;
     }
+    .errorStatus{
+        position: absolute;
+        top:85%;
+        bottom: 4%;
+        left: 0%;
+        right: 0%;
+        z-index: 9;
+    }
 }
 
 /* For screens up to 930px wide */
