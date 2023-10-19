@@ -178,7 +178,7 @@
  
     font-weight: 500;
     z-index: 47;
-    margin-top: 15%;
+    
 }
 
 /* Popup Container Styles */
@@ -257,6 +257,14 @@
 
     .header {
         height: 50%;
+    }
+    .errorStatus {
+        position: absolute;
+        top:91%;
+        bottom: 5%;
+        left: 0%;
+        right: 0%;
+        z-index: 9;
     }
 }
 
@@ -438,7 +446,7 @@
 
     .errorStatus {
         position: absolute;
-        top: 86%;
+        top: 91%;
         bottom: 4%;
         left: 0%;
         right: 0%;
@@ -555,11 +563,10 @@
 
     .errorStatus {
         position: absolute;
-        top: 80%;
+        top:85%;
         bottom: 4%;
         left: 0%;
         right: 0%;
         z-index: 9;
-        font-size: 14px;
     }
 }
