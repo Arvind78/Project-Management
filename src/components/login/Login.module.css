@@ -178,7 +178,12 @@
  
     font-weight: 500;
     z-index: 47;
-    
+    position: absolute;
+    top:91%;
+    bottom: 4%;
+    left: 0%;
+    right: 0%;
+    z-index: 9;
 }
 
 /* Popup Container Styles */
