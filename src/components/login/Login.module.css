@@ -458,7 +458,7 @@ right: 0;
 /* Styles for form elements */
 .form {
     margin: 15px 0px;
-    background-color: #ffffff; /* White background color */
+    background-color:none; /* White background color */
     border-radius: 8px;
     padding: 10px 5px 20px 5px;
     box-shadow: none; 
