@@ -201,7 +201,29 @@
 
 
 }
-
+.sideMenu div svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .sideMenu div svg {
+      /* Adjust icon size for smaller screens */
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 480px) {
+    .sideMenu div svg {
+      /* Further adjust icon size for very small screens */
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
 
 @media (max-width:380px) {
 
