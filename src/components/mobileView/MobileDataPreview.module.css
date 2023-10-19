@@ -19,7 +19,7 @@
   padding-bottom: 30px;
   border: 0.5px solid rgb(196, 192, 192);
   margin-top: 30px;
-  padding: 20px;
+  padding:10px;
   margin: 0px 10px;
   box-shadow: 0px 0px 10px 0px ghostwhite; /* Apply box shadow */
   transition: all 0.3s ease; /* Add smooth transition effects */
@@ -28,8 +28,8 @@
 
 /* Hover effect for the data preview box */
 .box-show:hover {
-  border-color: blue; /* Change border color on hover */
-  transform: scale(1.05); /*  Scale the box slightly on hover */
+  border-color: #9191c7; /* Change border color on hover */
+  transform: scale(1.02); /*  Scale the box slightly on hover */
 }
 
 /* Styles for the pagination component */
@@ -40,10 +40,19 @@
   gap: 50px;
   margin: 20px 0px; /* Apply margin to the pagination component */
 }
-.deteilsinfo {
+.groupdiv {
  /* padding: 10px 0px; */
+text-align: right;
+font-size:16px;
 }
-
+.deteilGroup{
+  display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 4px;
+ 
+}
 .heading   h3 {
   font-size: 20px;
   padding: 5px 0px;
@@ -115,8 +124,7 @@ gap: 14px;
      align-items: center;
      margin: 10px 0px;
      padding: 5px 5PX;
-   gap:4px;
-     font-size: 14px;
+     font-size: 15px;
    }
   
 }
@@ -173,8 +181,8 @@ gap: 14px;
     align-items: center;
     margin: 10px 0px;
     padding: 5px 5PX;
-  gap:20px;
-    font-size: 18px;
+     /* gap:2px; */
+       font-size: 18px;
   }
   
 }
@@ -189,8 +197,7 @@ gap: 14px;
       flex-direction: column;
       align-items: center;
       padding: 30px 0px;
-      overflow-y: hidden;
-      overflow-x: hidden;
+   
   }
 
   .box-show {
@@ -223,7 +230,7 @@ gap: 14px;
         border: 0.5px solid rgb(196, 192, 192);
         border-radius: 10px;
        
-        padding: 40px 14px;
+        padding:20px 14px;
         margin: 10px 10px;
         box-shadow: 0px 0px 10px 0px rgba(236, 233, 233, 0.5);
         transition: all 0.3s ease;

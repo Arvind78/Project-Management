@@ -5,22 +5,68 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
 
-select,input{
-    background-color:#fff;
+select,
+input {
+    background-color: #fff;
 }
+
 /* Style Custom Input Field with Specific Class */
 input.ant-input.css-dev-only-do-not-override-3mqfnx {
     font-family: 'Mulish', sans-serif;
 }
 
 :where(.css-dev-only-do-not-override-3mqfnx).ant-pagination .ant-pagination-item-active a {
-background-color: #1677ff;
-color: #fff;
-border-radius: 4px;
+    background-color: #4096ff;
+    color: #fff;
+    border-radius: 2px;
+    border: 0.5px solid #4096ff;
+
+
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination a {
+    background-color: #fff;
+    color: #4096ff;
+    border-radius: 2px;
+    border: 0.5px solid #4096ff;
+
+
+}
+
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    background-color: #4096ff;
+    border-radius: 30px;
+
+
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-default:not(:disabled) {
+    color: #131f2c7a;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 0.5px solid #4096ff;
+
+
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    background-color: #4096ff;
+    border-radius: 30px;
+
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-primary:not(:disabled) {
+    color: #fff;
+    background-color: #4096ff;
+    border-radius: 30px;
+
 }
 
 /* Style Input Placeholder Text */
@@ -42,10 +88,11 @@ input::placeholder {
 
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
-    background: #c9c8c8; 
+    background: #c9c8c8;
     border-radius: 80px;
 }
-option{
+
+option {
     font-size: 14px;
     overflow: hidden;
 }
@@ -61,7 +108,7 @@ option{
     background: #cccaca;
 }
 
- 
+
 /* Custom Styles for .ant-picker Class */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-picker {
     width: 250px;
@@ -91,15 +138,16 @@ option{
     position: relative;
     padding: 8px 5px;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: black;
     overflow-wrap: break-word;
 }
 
- 
- 
+
+
 
 @media (max-width: 900px) {
+
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
@@ -113,5 +161,5 @@ option{
         color: black;
         overflow-wrap: break-word;
     }
-    
+
 }

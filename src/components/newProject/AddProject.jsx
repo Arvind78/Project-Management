@@ -4,7 +4,9 @@ import { DatePicker, notification } from "antd"
 import axios from 'axios';
 
 const AddProject = () => {
+  const [error, setError] = useState(null);
   const [api, contextHolder] = notification.useNotification();
+  
   const [projectDetails, setProjectDetails] = useState({
     project: '',
     reason: '',
@@ -32,109 +34,9 @@ const AddProject = () => {
   const handelNewProject = (e) => {
 
     e.preventDefault();
-
-
-    if (projectDetails.project == null || projectDetails.project === "") {
-      api.error({
-        placement: "top",
-        message: "Project name is required",
-        description: "Please enter Project name"
-      })
-      return false;
-    }
-
-    if (projectDetails.reason == null || projectDetails.reason === "") {
-      api.error({
-        placement: "top",
-        message: "Reason is required",
-        description: "Please enter reason"
-      })
-      return false;
-    }
-
-
-    if (projectDetails.type == null || projectDetails.type === "") {
-      api.error({
-        placement: "top",
-        message: " Project type is required",
-        description: "Please enter project type"
-      })
-      return false;
-    }
-
-
-    if (projectDetails.division == null || projectDetails.division === "") {
-      api.error({
-        placement: "top",
-        message: "Project division is required",
-        description: "Please enter Project division"
-      })
-      return false;
-    }
-
-    if (projectDetails.category == null || projectDetails.category === "") {
-      api.error({
-        placement: "top",
-        message: "Project category is required",
-        description: "Please enter Project category"
-      })
-      return false;
-    }
-
-    if (projectDetails.priority == null || projectDetails.priority === "") {
-      api.error({
-        placement: "top",
-        message: "Project priority is required",
-        description: "Please enter Project priority"
-      })
-      return false;
-    }
-
-    if (projectDetails.department == null || projectDetails.department === "") {
-      api.error({
-        placement: "top",
-        message: "Project department is required",
-        description: "Please enter Project department"
-      })
-      return false;
-    }
-
-    if (projectDetails.startDate == null || projectDetails.startDate === "") {
-
-      api.error({
-        placement: "top",
-        message: "Project start date is required",
-        description: "Please enter Project start date"
-      })
-      return false;
-    }
-
-    if (projectDetails.endDate == null || projectDetails.endDate === "") {
-      api.error({
-        placement: "top",
-        message: "Project end date is required",
-        description: "Please enter Project end date"
-      })
-      return false;
-    }
-
-
     if (projectDetails.startDate > projectDetails.endDate) {
-      api.error({
-        placement: "top",
-        message: "Project start date less then end date",
-        description: "Please enter Project start date  less then end date"
-      })
-      return false;
-    }
-
-    if (projectDetails.location == null || projectDetails.location === "") {
-      api.error({
-        placement: "top",
-        message: "Project location is required",
-        description: "Please enter Project location"
-      })
-      return false
+      setError("End Date should be greater than Start Date");
+      return;
     }
 
     axios.post("https://project-manegement.onrender.com/api/newproject", projectDetails).then((res) => {
@@ -164,6 +66,7 @@ const AddProject = () => {
         endDate: '',
         location: '',
       });
+      setError(null);
   }
 
   return (
@@ -264,8 +167,9 @@ const AddProject = () => {
           </div>
 
           <div className={styles.fieldGroup}>
-            <label htmlFor="endData">End Date as Project Plan</label>
-            <input type='date' placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
+            <label htmlFor="endData" >End Date as Project Plan</label>
+            <input type='date' style={error&&{color:"red",borderColor:"red"}} placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
+            {error && <div style={error&&{color:"red",borderColor:"red"}} className={styles.error}>{error}</div>}
           </div>
 
           <div className={styles.fieldGroup}>

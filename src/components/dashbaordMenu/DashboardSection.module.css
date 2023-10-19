@@ -111,6 +111,7 @@
 .contentSection {
 
         width: 100%;
+        overflow-y: hidden;
  
     }
 
@@ -214,6 +215,9 @@
       width: 25px;
       height: 25px;
     }
+    .contentSection{
+        overflow: hidden;
+    }
   }
   
 
@@ -229,7 +233,7 @@
 
     .contentSection {
         width: 100%;
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
 
     .sideMenuSection {

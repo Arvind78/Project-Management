@@ -28,21 +28,30 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
    
       {currentItems.map((item, index) => (
         <div className={styles['box-show']} key={index}>
+          <div className={styles.groupdiv}>
+          <div>
+           <p>Status: <b>{item.status}</b></p>
+           </div>
+           
+           </div>
           <div className={styles.heading}>
             <h3>{item.project}</h3>
             <p>  {`${item.startDate} To ${item.endDate}`}</p>
         
           </div>
+        
           <div className={styles.deteilsinfo} >
            <div>
             <p>Reason: {item.reason}</p>
             </div> 
-           <div>
-            <span>Type: {item.type}</span>
+           <div className={styles.deteilGroup}>
+            <p>Type: {item.type}</p>
+            &nbsp; 
             <li>Category: {item.category}</li>
             </div> 
-            <div>
-            <span>Div: {item.division}</span>
+            <div className={styles.deteilGroup}>
+            <p>Div: {item.division}</p>
+            &nbsp; 
             <li>Dept: {item.department}</li>
             </div> 
            <div>
@@ -52,9 +61,7 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
            <p>Priority: {item.priority}</p>
            </div>
 
-           <div>
-           <p>Status: {item.status}</p>
-           </div>
+         
         
           </div>
           <div className={styles.btnGroup}>

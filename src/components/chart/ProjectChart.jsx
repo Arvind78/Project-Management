@@ -1,55 +1,122 @@
-import React from 'react';
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Label,
-  Legend,
-  ResponsiveContainer
-} from 'recharts';
+import React, { useEffect, useState } from 'react';
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
 
-const ProjectChart = ({ data }) => {
-  // Extract unique department names from the data
-  const uniqueDepartments = [...new Set(data.map(item => item.department))];
+const ProjectChart = () => {
+  const [chartData, setChartData] = useState(null);
 
-  // Prepare data for the bar chart by calculating total and closed projects for each department
-  const chartData = uniqueDepartments.map(department => {
-    const total = data.filter(item => item.department === department).length;
-    const closed = data.filter(
-      item => item.department === department && item.status === 'Closed'
-    ).length;
-    return { department, total, closed };
-  });
+  useEffect(() => {
+    // Fetch data from the API
+    fetch('http://localhost:8080/api/success/data')
+      .then(response => response.json())
+      .then(data => {
+        // Process the API response and prepare data for the chart
+        const departments = Object.keys(data.departmentSuccessPercentage);
+        const chartData = departments.map(department => {
+          const { total, closed, successPercentage } = data.departmentSuccessPercentage[department];
+          return {
+            name: department,
+            total,
+            closed,
+            successPercentage,
+          };
+        });
+        setChartData(chartData);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
-  // Calculate suitable font size based on the number of unique departments
-  const fontSize = Math.min(14, 400 / uniqueDepartments.length);
+  const options = {
+    chart: {
+      type: 'column',
+      backgroundColor: '#fff', // Set chart background color
+      height: '400px', 
+      borderRadius:"8px",
+      padding:"55px",
+      minWidth:"900px"// Set chart height
+    },
+    title: {
+      text: null, // Remove chart title
+    },
+    xAxis: {
+      categories: chartData ? chartData.map(item => item.name) : [],
+      crosshair: true,
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: 'Projects',
+      },
+      gridLineColor: "transparent", // Set yAxis grid line color
+      lineColor: '#ccc', // Set yAxis line color
+      labels: {
+        format: '{value}', // Format for y-axis labels
+      },
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0,
+        borderRadius: 5, // Add border radius to columns
+        dataLabels: {
+          enabled: true,
+          format: '{point.y}', // Display data labels on top of columns
+        },
+        states: {
+          hover: {
+            enabled: false, // Disable hover effect on columns
+          },
+        },
+      },
+    },
+    series: [{
+      name: 'Total',
+      data: chartData ? chartData.map(item => item.total) : [],
+      color: '#044e92', // Set total column color
+    }, {
+      name: 'Closed',
+      data: chartData ? chartData.map(item => item.closed) : [],
+      color: 'green', // Set closed column color
+    }],
+    legend: {
+      enabled: true, // Remove legend
+    },
+    credits: {
+      enabled: false, // Remove Highcharts credits
+    },
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 1600, // Adjust based on your design needs
+        },
+        chartOptions: {
+          xAxis: {
+            labels: {
+              rotation: 0, // Rotate x-axis labels if needed for better visibility
+            },
+          },
+        },
+      }, {
+        condition: {
+          maxWidth: 240, // Adjust based on your design needs
+        },
+        chartOptions: {
+          xAxis: {
+            labels: {
+              rotation: -45, // Rotate x-axis labels for better visibility on smaller screens
+            },
+          },
+        },
+      }],
+    },
+  };
 
   return (
-    <ResponsiveContainer width="100%" height={300}>
-      {/* Bar Chart displaying project counts based on departments */}
-      <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-        {/* X-Axis representing department names */}
-        <XAxis dataKey="department" interval={0} tick={{ fontSize }} />
-        {/* Y-Axis for project counts */}
-        <YAxis />
-        {/* Tooltip to display detailed information on hover */}
-        {/* Label for the X-Axis */}
-        <Label value="Department" offset={0} position="insideBottom" />
-        {/* Legend indicating color representation for 'total' and 'closed' bars */}
-        <Legend iconType="circle" />
-        {/* Bar representing total projects with label above the bar */}
-        <Bar dataKey="total" fill="#8884d8" barSize={15}>
-          {/* Data label for total projects above the bar */}
-          <Label dataKey="total" position="top" />
-        </Bar>
-        {/* Bar representing closed projects with label above the bar */}
-        <Bar dataKey="closed" fill="#82ca9d" barSize={15}>
-          {/* Data label for closed projects above the bar */}
-          <Label dataKey="closed" position="top" />
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
+    <div className="project-chart" style={{ padding: '16px' }}>
+      {chartData && <HighchartsReact highcharts={Highcharts} options={options} />}
+    </div>
   );
 };
 

@@ -11,7 +11,7 @@ const ShowProject = () => {
   const [windowWidth, setWindowWidth] = useState("")
   const [selectedSortOption, setSelectedSortOption] = useState(''); // State to track selected sorting option
   const [loading,setLoading] =useState(false)
-  const [activeBtnId,setActiveBtn]=useState("")
+   
   useEffect(() => {
 
     setInterval(() => {
@@ -36,7 +36,7 @@ const ShowProject = () => {
 
   // Handle project status change (Running, Closed, Cancelled)
   const handleStatus = (id, status) => {
-    setActiveBtn(id)
+  
     axios.post("https://project-manegement.onrender.com/api/update", { id, status })
       .then(() => {
         getData();
@@ -111,9 +111,9 @@ const ShowProject = () => {
     Status: item.status,
     update: (
       <div className={styles.btnGroup}>
-        <Button type={((activeBtnId).includes(item._id))?"primary":"default"}  onClick={() => handleStatus(item._id, "Running")}>Start</Button>
-        <Button  type={((activeBtnId).includes(item._id))?"primary":"default"} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
-        <Button  type={((activeBtnId).includes(item._id))?"primary":"default"} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
+        <Button type={"primary"}    onClick={() => handleStatus(item._id, "Running")}>Start</Button>
+        <Button  type={"default"}    onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
+        <Button  type={"default"}    onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
       </div>
     ),
   }));

@@ -20,7 +20,7 @@ const Login = () => {
   const [formErrors, setFormErrors] = useState({
     email: null,
     password: null,
-    loginStatus: "jaanu kahjjjja", // Initial login status message
+    loginStatus:null, // Initial login status message
     status: null
   });
 
