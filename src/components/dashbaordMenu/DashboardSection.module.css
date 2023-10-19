@@ -219,8 +219,8 @@
   @media (max-width: 480px) {
     .sideMenu div svg {
       /* Further adjust icon size for very small screens */
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
     }
   }
   
