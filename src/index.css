@@ -83,7 +83,7 @@ option{
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
     position: relative;
-    padding: 10px 5px;
+    padding: 8px 5px;
     text-align: center;
     font-size: 11px;
     color: black;

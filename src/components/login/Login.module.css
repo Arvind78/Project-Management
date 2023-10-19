@@ -304,9 +304,8 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 0px 0px 0px 50px; /* Border radius for the bottom-right corner */
+        border-radius: 0px 0px 0px 40px; /* Border radius for the bottom-right corner */
         display: block;
-
         position: relative;
     }
     
@@ -323,7 +322,6 @@
      
     .formContainer {
         height:22%;
-      
         width: 100%;
     }
 
@@ -386,16 +384,25 @@ right: 0;
 .formGroup {
     display: flex;
     flex-direction: column;
-    padding: 5px 20px;
+    padding: 10px 20px;
     gap: 5px;
 }
 
 /* Styles for form inputs */
 .formInput {
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     border: 0.5px solid #dad7d7c7;
     outline: none;
+}
+
+.formInputPassword {
+    padding:9px;
+    border-radius: 5px;
+    border: 0.5px solid #dad7d7c7;
+    outline: none;
+    position: relative;
+    background-color: transparent;
 }
 .errorStatus{
     position: absolute;

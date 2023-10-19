@@ -45,16 +45,29 @@ const ShowProject = () => {
   };
 
   // Handle search functionality
-  const handleSearch = () => {
-    const query = searchValue;
-    axios.get(`https://project-manegement.onrender.com/api/search?q=${query}`)
-      .then((res) => {
-        setData(res.data.data);
-      })
-      .catch((err) => {
-        throw err;
+  // Handle search functionality using useMemo to perform filtering
+  const filteredData = useMemo(() => {
+    if (!searchValue) {
+      // If search input is empty, return all data
+      return data;
+    } else {
+      // Perform case-insensitive search
+      const searchLowerCase = searchValue.toLowerCase();
+    const searchData= data.filter(item => {
+        // Filter based on relevant fields; adjust as per your data structure
+        return (
+          item.project.toLowerCase().includes(searchLowerCase) ||
+          item.reason.toLowerCase().includes(searchLowerCase) ||
+          item.division.toLowerCase().includes(searchLowerCase) ||
+          item.category.toLowerCase().includes(searchLowerCase) ||
+          item.priority.toLowerCase().includes(searchLowerCase) ||
+          item.department.toLowerCase().includes(searchLowerCase) ||
+          item.location.toLowerCase().includes(searchLowerCase)
+        );
       });
-  };
+      return setData(searchData)
+    }
+  }, [searchValue]);
 
   // Handle sort functionality
 
@@ -170,7 +183,7 @@ const ShowProject = () => {
               if (e.target.value === "") return getData();
             }}
           />
-          <AiOutlineSearch style={{ cursor: 'pointer' }} onClick={handleSearch} />
+          <AiOutlineSearch style={{ cursor: 'pointer' }}   />
         </div>
         <div className={styles.container}>
           <label htmlFor="sortOptions">Sort By:</label>
@@ -204,3 +217,5 @@ const ShowProject = () => {
 };
 
 export default ShowProject;
+
+ 
