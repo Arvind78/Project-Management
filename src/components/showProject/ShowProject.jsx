@@ -175,7 +175,7 @@ const ShowProject = () => {
       <div className={styles.searchBar}>
         <div className={styles.sortOption}>
           <input
-            type='text'
+            type='search'
             className={styles.sortOptionInput}
             placeholder="Search..."
             onChange={(e) => {
