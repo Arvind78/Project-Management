@@ -339,7 +339,7 @@
     
 /* Styles for the logo heading */
 .logoHeading {
- 
+    font-size: 15px;
     color: #ffffff; /* White text color */
 }
 
