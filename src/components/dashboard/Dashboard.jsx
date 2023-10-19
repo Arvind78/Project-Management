@@ -47,20 +47,28 @@ const Dashboard = () => {
       {/* Project Information */}
       <div className={styles.project_info_container}>
         <div className={styles.project_info_item}>
+          <div className={styles.info}>
           <p>Total Projects</p>
           <h3>{projectData.totalProjects}</h3>
+          </div>
         </div>
         <div className={styles.project_info_item}>
+        <div className={styles.info}>
           <p>Closed</p>
           <h3>{projectData.closedProjects}</h3>
+          </div>
         </div>
         <div className={styles.project_info_item}>
+        <div className={styles.info}>
           <p>Running</p>
           <h3>{projectData.runningProjects}</h3>
+          </div>
         </div>
         <div className={styles.project_info_item}>
+        <div className={styles.info}>
           <p>Cancelled</p>
           <h3>{projectData.canceledProjects}</h3>
+          </div>
         </div>
       </div>
 
