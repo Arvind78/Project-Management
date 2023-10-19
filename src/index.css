@@ -9,7 +9,7 @@
     font-family: 'Mulish', sans-serif;
 }
 
-select{
+select,input{
     background-color:#fff;
 }
 /* Style Custom Input Field with Specific Class */
