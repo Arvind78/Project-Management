@@ -11,6 +11,7 @@ const ShowProject = () => {
   const [windowWidth, setWindowWidth] = useState("")
   const [selectedSortOption, setSelectedSortOption] = useState(''); // State to track selected sorting option
   const [loading,setLoading] =useState(false)
+  const [activeBtnId,setActiveBtn]=useState("")
   useEffect(() => {
 
     setInterval(() => {
@@ -35,6 +36,7 @@ const ShowProject = () => {
 
   // Handle project status change (Running, Closed, Cancelled)
   const handleStatus = (id, status) => {
+    setActiveBtn(id)
     axios.post("https://project-manegement.onrender.com/api/update", { id, status })
       .then(() => {
         getData();
@@ -109,9 +111,9 @@ const ShowProject = () => {
     Status: item.status,
     update: (
       <div className={styles.btnGroup}>
-        <Button type='primary' onClick={() => handleStatus(item._id, "Running")}>Start</Button>
-        <Button onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
-        <Button onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
+        <Button type={((activeBtnId).includes(item._id))?"primary":"default"}  onClick={() => handleStatus(item._id, "Running")}>Start</Button>
+        <Button  type={((activeBtnId).includes(item._id))?"primary":"default"} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
+        <Button  type={((activeBtnId).includes(item._id))?"primary":"default"} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
       </div>
     ),
   }));
@@ -183,10 +185,9 @@ const ShowProject = () => {
               if (e.target.value === "") return getData();
             }}
           />
-          <AiOutlineSearch style={{ cursor: 'pointer' }}   />
         </div>
         <div className={styles.container}>
-          <label htmlFor="sortOptions">Sort By:</label>
+          <label htmlFor="sortOptions">Sort By: </label>
           <select
             id="sortOptions"
             style={{borderRadius:"3px",padding:'5px'}}
@@ -207,10 +208,13 @@ const ShowProject = () => {
       {(windowWidth > 810) ?
         <div className={styles.tableContainer}>
           {/* Table component */}
-          <Table dataSource={dataSource}  loading={loading} columns={columns} />
+          <Table dataSource={dataSource} 
+ 
+          pagination={{ PageSize: 20}}
+           loading={loading} columns={columns} />
         </div>
         :
-        <MobileDataPreview data={data} loading={loading}  handleStatus={handleStatus} />
+        <MobileDataPreview data={data} loading={loading} prt  handleStatus={handleStatus} />
       }
     </>
   );

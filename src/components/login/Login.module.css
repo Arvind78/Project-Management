@@ -410,9 +410,10 @@
     .formHeading {
         text-align: center;
         padding: 25px 20px;
-        font-size: 18px;
+        font-size: 17px;
         text-align: left;
-        color: #2b2929c7;
+        color: #383737c7;
+      
         /* Semi-transparent text color */
     }
 

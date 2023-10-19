@@ -17,6 +17,12 @@ input.ant-input.css-dev-only-do-not-override-3mqfnx {
     font-family: 'Mulish', sans-serif;
 }
 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination .ant-pagination-item-active a {
+background-color: #1677ff;
+color: #fff;
+border-radius: 4px;
+}
+
 /* Style Input Placeholder Text */
 input.ant-input.css-dev-only-do-not-override-3mqfnx::placeholder {
     font-family: 'Mulish', sans-serif;
