@@ -41,8 +41,13 @@ const ProjectChart = () => {
       text: null, // Remove chart title
     },
     xAxis: {
-      categories: chartData ? chartData.map(item => item.name) : [],
+      categories: chartData ? chartData.map(item => [item.successPercentage, item.name]) : [],
       crosshair: true,
+      labels: {
+        formatter: function () {
+          return (this.value[0]).replace(".00","") + '<br/>' + this.value[1];
+        },
+      },
     },
     yAxis: {
       min: 0,
