@@ -1,7 +1,7 @@
 import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import NotFoundPage from './components/error/NotFoundPage.jsx';
-import UserDashboardPage from './components/dashboardMenu/DashboardSection.jsx'; // Corrected typo in folder name
+import UserDashboardPage from './components/dashbaordMenu/DashboardSection.jsx'; // Corrected typo in folder name
 import styles from './App.module.css'; // Import the CSS module
 
 const LazyLoginPage = lazy(() => import('./components/login/Login.jsx'));
