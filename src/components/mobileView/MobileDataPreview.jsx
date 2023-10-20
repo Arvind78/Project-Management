@@ -5,7 +5,7 @@ import styles from './MobileDataPreview.module.css'; // Import the CSS module
 import {FaAngleLeft ,FaAngleRight} from "react-icons/fa6"
 import { Button } from 'antd';
 const MobileDataPreview = ({ data ,handleStatus,loading}) => {
-  const itemsPerPage = 4;
+  const itemsPerPage = 1;
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate start and end index for pagination
@@ -74,7 +74,15 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
     
     </div>
     
-    {(data.lengt>0) &&
+ 
+ {/* {loading &&
+ <div className={styles.loaderCoantainer}>
+        <div className={styles.loader}></div> 
+      
+       
+        </div>  
+      } */}
+         {(data.lengt>0) &&
       <div className={styles.pagination}>
       <button onClick={handlePrevPage} disabled={currentPage === 1}>
       <FaAngleLeft size={18} /> 
@@ -85,13 +93,6 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
       </button>
     </div>
 }
- {loading &&
- <div className={styles.loaderCoantainer}>
-        <div className={styles.loader}></div> 
-      
-       
-        </div>  
-      }
     </>
   );
 };

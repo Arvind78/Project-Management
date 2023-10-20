@@ -1,26 +1,16 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react';
+import React, { useEffect, useState} from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import NotFoundPage from './components/error/NotFoundPage.jsx';
 import UserDashboardPage from './components/dashbaordMenu/DashboardSection.jsx'; // Corrected typo in folder name
-import styles from './App.module.css'; // Import the CSS module
-
-const LazyLoginPage = lazy(() => import('./components/login/Login.jsx'));
-
+ 
+import LoginPage from "./components/login/Login.jsx"
+ 
 const App = () => {
   const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(true); // State to control loading visibility
   const navigate = useNavigate();
   const user = sessionStorage.getItem('userToken');
 
-  // Simulate loading delay for demonstration purposes (remove this in your actual code)
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Simulated loading time: 2 seconds
-
-    return () => clearTimeout(loadingTimeout); // Clear timeout on component unmount
-  }, []);
-
+ 
   // Effect to handle user authorization and redirection
   useEffect(() => {
     if (user) {
@@ -40,20 +30,10 @@ const App = () => {
 
   return (
     <div>
-      {/* Loading progress meter */}
-      {isLoading && (
-        <div className={styles.loadingContainer}>
-          <div className={styles.loadingIcon}>
-            {/* Add your custom loading icon or animation here */}
-            Loading...
-          </div>
-        </div>
-      )}
-
-      {/* Routes */}
+     
       <Routes>
         {/* Route for the login page with lazy loading and loading fallback */}
-        <Route path="/" element={<Suspense fallback={null}><LazyLoginPage /></Suspense>} />
+        <Route path="/" element={<LoginPage/>} />
         {/* Route for the user dashboard */}
         {user && <Route path="/dashboard" element={<UserDashboardPage />} />}
         {/* Route for handling 404 errors */}

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { Menu } from 'antd';
-import { AiFillDashboard, AiFillPlusCircle, AiOutlineDashboard, AiOutlinePlusCircle } from 'react-icons/ai';
-import { IoListCircleSharp, IoListCircleOutline } from 'react-icons/io5';
-import { HiOutlineLogout } from 'react-icons/hi';
+
 import { useNavigate } from 'react-router-dom';
 import styles from './DashboardSection.module.css';
 import Dashboard from '../dashboard/Dashboard.jsx';
@@ -18,6 +15,8 @@ import createActive from '../../assets/create-project-active.svg';
 import create from '../../assets/create-project.svg';
 
 import logOut from '../../assets/Logout.svg'
+import logOut2 from '../../assets/Logout2.svg'
+
 const DashboardSection = () => {
   const navigate = useNavigate();
   const [path, setPath] = useState('dashboard');
@@ -42,41 +41,45 @@ const DashboardSection = () => {
   return (
     <div className={styles.DashboardSection}>
       <div className={styles.sideMenuSection}>
-        <div className={styles.sideMenu}>
-          <div onClick={() => handleMenu('dashboard', 'dashboard')}>
-            {path === 'dashboard' ? (
-              <img src={dashActive}  size={35} color='#1475cf' />
-            ) : (
-              <img src={dashImg}  size={35} color='#1475cf' />
+        <div className={styles.sidelogo}>
      
+        </div>
+        <div className={styles.sideMenu}>
+          <div  style={{borderLeft:(path === 'dashboard') &&"5px solid #04559f",borderRadius:"3px"}}  onClick={() => handleMenu('dashboard', 'dashboard')}>
+            {path === 'dashboard' ? (
+              <img src={dashActive} size={35} color='#1475cf' />
+            ) : (
+              <img src={dashImg} size={35} color='#1475cf' />
+
             )}
-            
+
           </div>
-          
-          <div onClick={() => handleMenu('showProject', 'Project List')}>
+
+          <div style={{borderLeft:(path === 'showProject') &&"5px solid #04559f", borderRadius:"3px"}} onClick={() => handleMenu('showProject', 'Project List')}>
             {path === 'showProject' ? (
-             <img src={projectActive}  size={35} color='#1475cf' />
-             ) : (
-               <img src={project}  size={35} color='#1475cf' />
-      
+              <img src={projectActive} size={35} color='#1475cf' />
+            ) : (
+              <img src={project} size={35} color='#1475cf' />
+
             )}
-      
+
           </div>
-          <hr  />
-          <div onClick={() => handleMenu('newProject', 'Create Project')}>
+          <hr />
+          <div style={{borderLeft:(path === 'newProject') &&"5px solid #04559f",borderRadius:"3px"}} onClick={() => handleMenu('newProject', 'Create Project')}>
             {path === 'newProject' ? (
-              <img src={createActive}  size={35} color='#1475cf' />
-              ) : (
-                <img src={create}  size={35} color='#1475cf' />
-       
+              <img src={createActive} size={35} color='#1475cf' />
+            ) : (
+              <img src={create} size={35} color='#1475cf' />
+
             )}
-         
+
           </div>
-          <div className={styles.logoutSection} onClick={handleLogout}>
-  
-            <img src={logOut}  size={35} color='#1475cf' />
-        
-          </div>
+
+        </div>
+        <div className={styles.logoutSection} onClick={handleLogout}>
+
+          <img src={logOut} size={35} color='#1475cf' />
+
         </div>
       </div>
       <div className={styles.contentSection}>
@@ -86,17 +89,17 @@ const DashboardSection = () => {
             <span>{title}</span>
           </div>
           <div className={styles.contentHeaderLogo}>
-     
-  
-  <img src={logOut}    style={{height:"35px",width:"35px",color:"-moz-initial",cursor:"pointer"}}  onClick={handleLogout} />
 
- 
+
+            <img src={logOut2} style={{ height: "35px", width: "35px", color: "-moz-initial", cursor: "pointer" }} onClick={handleLogout} />
+
+
           </div>
         </div>
         <div className={styles.content}>
-        <div>{path === 'dashboard' && <Dashboard />}</div>
-        <div>{path === 'showProject' && <ShowProject />}</div>
-        <div>{path === 'newProject' && <AddProject />}</div>
+          <div>{path === 'dashboard' && <Dashboard />}</div>
+          <div>{path === 'showProject' && <ShowProject />}</div>
+          <div>{path === 'newProject' && <AddProject />}</div>
         </div>
       </div>
     </div>

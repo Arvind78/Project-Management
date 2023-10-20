@@ -74,7 +74,11 @@ const Dashboard = () => {
 
       {/* Project Chart */}
       <div className={styles.chart_container}>
+       
+        <p>Department wise Total vs Closed</p>
         <ProjectChart data={data} />
+      
+      
       </div>
     </div>
   );

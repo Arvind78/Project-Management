@@ -35,7 +35,7 @@ const ProjectChart = () => {
       height: '400px', 
       borderRadius:"8px",
       padding:"55px",
-      minWidth:"900px"// Set chart height
+      maxiWdth:"900px"// Set chart height
     },
     title: {
       text: null, // Remove chart title
@@ -105,9 +105,24 @@ const ProjectChart = () => {
         },
       }, {
         condition: {
-          maxWidth: 240, // Adjust based on your design needs
+          maxWidth: 240, 
+          chartOptions: {
+            xAxis: {
+              labels: {
+                rotation: 0, // Rotate x-axis labels if needed for better visibility
+              },
+            },
+          },
+          // Adjust based on your design needs
         },
         chartOptions: {
+          chartOptions: {
+            xAxis: {
+              labels: {
+                rotation: 0, // Rotate x-axis labels if needed for better visibility
+              },
+            },
+          },
           xAxis: {
             labels: {
               rotation: -45, // Rotate x-axis labels for better visibility on smaller screens

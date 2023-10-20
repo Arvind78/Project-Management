@@ -1,60 +1,93 @@
 .DashboardSection {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     overflow: hidden;
 
 }
-
-.sideMenuSection {
-    background-color: rgb(250, 249, 247);
-    width:80px;
-
-    font-size: 16px;
-    padding: 20px 10px;
+.sidelogo{
+ 
+   
+    border-radius: 5px;
     display: flex;
- justify-content: center;
-
+    justify-content: center;
     align-items: center;
 }
 
-.sideMenu div {
-   padding:15px 0px;
+.sidelogo img{
+    height:80%;
+    width: 80%;
 
+    border-radius: 5px;
+    background-color:#1475CF;
+}
+.sideMenuSection {
+    background-color: rgb(255, 255, 255);
+    width: 65px;
+    height: 90%;
+    font-size: 16px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
+    top: 0%;
 }
 
+.sideMenu{
+  
+    width: 100%;
+}
+.sideMenu div{
+    display: flex;
+    justify-content:center;
+    flex-direction: column; 
+    align-items: center;
+    padding:15px 0px;
+    cursor: pointer;
+width: 100%;
+}
+hr {
+    margin: 10px 10px;
+ 
+}
+ 
 .contentSection {
+ 
     width: 100%;
     overflow: hidden;
 }
 
 .content {
-    height:85%;
+    height: 85%;
     width: 100%;
- 
-    overflow-y: scroll;
- 
+
+    overflow-y: hidden;
+
 
 
 }
 
- 
+
 .contentHeader {
-    height: 80px;
+    height: 90px;
     width: 100%;
     background-image: url("../../assets/Header-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 0px 0px 0px 60px;
+    border-radius: 0px 0px 0px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px  5% 0px 0px;
+    padding: 0px 5% 0px 0px;
 }
 
 .contentHeader .contentHeaderTitle {
- 
+
     display: flex;
     justify-content: start;
     align-items: center;
@@ -69,34 +102,43 @@
     width: 18px;
 }
 
- .contentHeaderLogo img {
-   
-  color: aliceblue;
+.contentHeaderLogo img {
+    display: none;
+    color: aliceblue;
 }
+
+
 
 .contentHeader .contentHeaderLogo img {
     height: 60px;
     width: 60px;
 }
 
+.logoutSection{
+    cursor: pointer;
+}
 
 @media (max-width:900px) {
     .sideMenuSection {
         background-color: rgb(250, 249, 247);
         width: 50px;
-    
+
         font-size: 16px;
         padding: 20px 10px;
         display: flex;
         flex-direction: column;
-    
+
         align-items: center;
-    } 
+    }
+
     .sideMenu div span {
         display: none;
-   }
+    }
 }
-@media (max-width:590px) {
+
+@media (max-width:590px) {}
+
+@media (max-width:800px) {
 
     .DashboardSection {
         height: 100vh;
@@ -106,13 +148,13 @@
 
     }
 
-    
 
-.contentSection {
+
+    .contentSection {
 
         width: 100%;
         overflow-y: hidden;
- 
+
     }
 
     .sideMenuSection {
@@ -133,7 +175,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-  }
+    }
+
     .sideMenu div {
         width: 100%;
         display: flex;
@@ -145,10 +188,10 @@
 
     .sideMenu div span {
         display: none;
-   }
+    }
 
     .contentSection {
-        
+
         width: 100%;
         order: 2;
     }
@@ -156,7 +199,7 @@
     .logoutSection {
         height: 0;
         display: block;
-   }
+    }
 
     .contentHeader {
         height: 60px;
@@ -172,54 +215,56 @@
     }
 
     .contentHeader .contentHeaderTitle {
-        width: 50%;
+        width: 92%;
         display: flex;
         justify-content: start;
         align-items: center;
         gap: 5px;
-        font-size: 15px;
+        font-size: 18px;
         color: aliceblue;
         padding: 0px 15px;
     }
 
-     
+
     .contentHeader .contentHeaderLogo {
-        width: 50%;
+        width: 8%;
         padding: 0px 0px;
     }
 
     .contentHeader .contentHeaderLogo img {
-     display: none;
+        display: block;
     }
 
 
 }
+
 .sideMenu div svg {
     width: 35px;
     height: 35px;
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .sideMenu div svg {
-      /* Adjust icon size for smaller screens */
-      width: 25px;
-      height: 25px;
+        /* Adjust icon size for smaller screens */
+        width: 25px;
+        height: 25px;
     }
-  }
-  
-  /* Media query for even smaller screens */
-  @media (max-width: 480px) {
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
     .sideMenu div svg {
-      /* Further adjust icon size for very small screens */
-      width: 25px;
-      height: 25px;
+        /* Further adjust icon size for very small screens */
+        width: 25px;
+        height: 25px;
     }
-    .contentSection{
+
+    .contentSection {
         overflow: hidden;
     }
-  }
-  
+}
+
 
 @media (max-width:380px) {
 
@@ -254,7 +299,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-  }
+    }
+
     .sideMenu div {
         width: 100%;
         display: flex;
@@ -266,7 +312,7 @@
 
     .sideMenu div span {
         display: none;
-   }
+    }
 
     .contentSection {
         width: 100%;
@@ -276,7 +322,7 @@
     .logoutSection {
         height: 0;
         display: block;
-   }
+    }
 
     .contentHeader {
         height: 60px;
@@ -292,7 +338,7 @@
     }
 
     .contentHeader .contentHeaderTitle {
-        width: 50%;
+        width: 90%;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -302,22 +348,21 @@
         padding: 0px 15px;
     }
 
-    .contentHeader .contentHeaderTitle img {
-        height: 18px;
-        width: 18px;
-    }
+    /* .contentHeader .contentHeaderTitle img {
+        height: 15px;
+        width: 15px;
+    } */
 
     .contentHeader .contentHeaderLogo {
-        width: 50%;
+
+        width: 10%;
         padding: 0px 0px;
     }
 
     .contentHeader .contentHeaderLogo img {
-        height: 40px;
-        width: 40px;
+        height: 20px;
+        width: 20px;
     }
 
 
 }
-
-
