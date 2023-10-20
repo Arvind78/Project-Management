@@ -7,7 +7,7 @@ const ProjectChart = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('http://localhost:8080/api/success/data')
+    fetch('https://project-manegement.onrender.com/api/success/data')
       .then(response => response.json())
       .then(data => {
         // Process the API response and prepare data for the chart
