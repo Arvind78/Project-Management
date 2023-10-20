@@ -11,7 +11,7 @@
 
 /* Styles for the header section */
 .header {
-    height: 50%;
+    height: 60%;
     /* 50% of the parent container */
     width: 100%;
     background-image: url("../../assets/Header-bg.svg");
@@ -27,7 +27,7 @@
 
 /* Styles for the login container */
 .loginContainer {
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -38,14 +38,14 @@
 .formContainer {
     height: auto;
     padding: 15px 10px;
-    width:32%;
+    width:28%;
     position: absolute;
     top: 8%;
 }
 
 /* Styles for the logo heading */
 .logoHeading {
-
+  font-size: 16px;
     color: #ffffff;
     /* White text color */
 }
@@ -55,7 +55,7 @@
     margin: 15px 0px;
     background-color: #ffffff;
     /* White background color */
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 10px 5px 30px 5px;
     box-shadow: 0px 0px 5px 0px rgba(145, 143, 143, 0.75);
     /* Box shadow for the form */
@@ -65,7 +65,7 @@
 .formHeading {
     text-align: center;
     padding: 20px 0px;
-    font-size: 15px;
+    font-size: 16px;
     color: #2b2929c7;
     /* Semi-transparent text color */
 }
@@ -77,6 +77,8 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    line-height: 34px;
+    padding:5px 0px;
     font-size: 18px;
 }
 
@@ -84,7 +86,7 @@
 .formGroup {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 5px 20px;
     gap: 5px;
 }
 
@@ -148,7 +150,7 @@
 }
 
 .submitButton {
-    padding: 10px;
+    padding: 8px 0px;
     color: #ffffff;
     /* White text color */
     background-color: #1475cf;
@@ -175,7 +177,6 @@
 /* Styles for error status messages */
 .errorStatus {
     text-align: center;
- 
     font-weight: 500;
     z-index: 47;
     position: absolute;
@@ -238,7 +239,6 @@
     flex-direction: column;
     gap: 5px;
     width: 100%;
-
     margin: 10px 0px;
 }
 
@@ -364,20 +364,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-    }
-
-
+   }
     .formContainer {
         height: 22%;
         width: 100%;
     }
-
-    .submitButton {
+ .submitButton {
         /* Updated styles for smaller screens */
         width: 85%;
     }
-
 
     .popupContent {
         width: 85%;

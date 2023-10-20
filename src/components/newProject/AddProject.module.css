@@ -384,12 +384,12 @@ option {
         justify-content: start;
         flex-direction: column;
         flex-wrap: wrap;
-       padding: 10px;
+        padding: 10px;
 
 
     }
 
-    
+
 
     .formGroup2 .fieldGroup {
         width: 100%;
@@ -397,7 +397,7 @@ option {
         justify-content: center;
         flex-direction: column;
         padding: 10px 0px;
-       
+
     }
 
     .formGroup {

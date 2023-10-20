@@ -7,7 +7,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+  
 }
+
+.slick-slide img {
+    margin: auto;
+  }
 
 select,
 input {
@@ -83,7 +88,7 @@ input::placeholder {
 /* Styling Scrollbar for Webkit-based Browsers */
 /* Scrollbar Width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
 /* Scrollbar Track */
@@ -136,16 +141,14 @@ option {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
     position: relative;
-    padding: 8px 5px;
+    padding: 9px 5px;
     text-align: center;
     font-size: 12px;
     color: black;
     overflow-wrap: break-word;
 }
 
-
-
-
+ 
 @media (max-width: 900px) {
 
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
@@ -162,4 +165,19 @@ option {
         overflow-wrap: break-word;
     }
 
+}
+
+@media (max-width:800px){
+    #one{
+    border-left:none;
+
+     color: red;
+    
+    }
+    #two{
+        order: 3;  
+    }
+    #three{
+   
+    }
 }

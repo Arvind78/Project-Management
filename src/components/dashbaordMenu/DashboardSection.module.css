@@ -1,26 +1,10 @@
 .DashboardSection {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    overflow: hidden;
 
 }
-.sidelogo{
- 
-   
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.sidelogo img{
-    height:80%;
-    width: 80%;
-
-    border-radius: 5px;
-    background-color:#1475CF;
-}
 .sideMenuSection {
     background-color: rgb(255, 255, 255);
     width: 65px;
@@ -29,7 +13,7 @@
     padding: 50px 0px;
     display: flex;
     justify-content: space-between;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     position: sticky;
     border-radius: 4px;
@@ -37,54 +21,61 @@
     top: 0%;
 }
 
-.sideMenu{
-  
+.sideMenu {
+
     width: 100%;
 }
-.sideMenu div{
+
+.sideMenu div {
     display: flex;
-    justify-content:center;
-    flex-direction: column; 
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding:15px 0px;
+    padding: 15px 0px;
     cursor: pointer;
-width: 100%;
+    width: 100%;
 }
+
 hr {
     margin: 10px 10px;
- 
-}
- 
-.contentSection {
- 
-    width: 100%;
-    overflow: hidden;
-}
-
-.content {
-    height: 85%;
-    width: 100%;
-
-    overflow-y: hidden;
-
-
 
 }
+
+/* -========================================================== */
 
 
 .contentHeader {
-    height: 90px;
+    height: 110px;
     width: 100%;
     background-image: url("../../assets/Header-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 0px 0px 0px 45px;
+    border-radius: 0px 0px 0px 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 5% 0px 0px;
+    position: relative;
+
 }
+
+.contentSection {
+    width: 100%;
+    height: 100%;
+
+    /* background-color: red;  */
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+}
+
 
 .contentHeader .contentHeaderTitle {
 
@@ -102,20 +93,22 @@ hr {
     width: 18px;
 }
 
-.contentHeaderLogo img {
-    display: none;
-    color: aliceblue;
-}
-
 
 
 .contentHeader .contentHeaderLogo img {
     height: 60px;
     width: 60px;
+    padding: 0px 0px 15px 0px;
 }
 
-.logoutSection{
+.logoutSection {
     cursor: pointer;
+}
+
+.contentHeaderLogot {
+    height: 30px;
+    visibility: hidden;
+    width: 30px;
 }
 
 @media (max-width:900px) {
@@ -124,7 +117,7 @@ hr {
         width: 50px;
 
         font-size: 16px;
-        padding: 20px 10px;
+
         display: flex;
         flex-direction: column;
 
@@ -136,22 +129,16 @@ hr {
     }
 }
 
-@media (max-width:590px) {}
 
 @media (max-width:800px) {
 
     .DashboardSection {
         height: 100vh;
         width: 100%;
-
         position: relative;
-
     }
 
-
-
     .contentSection {
-
         width: 100%;
         overflow-y: hidden;
 
@@ -164,7 +151,8 @@ hr {
         padding: 6px 12px;
         align-items: center;
         position: absolute;
-        top: 90%;
+        top: 0%;
+        background-color: brown;
         left: 0%;
         justify-content: space-between;
         z-index: 9;
@@ -177,23 +165,35 @@ hr {
         align-items: center;
     }
 
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        overflow-y: scroll;
+        padding-bottom: 50px;
+    }
+
+
     .sideMenu div {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 5px;
-        padding: 10px 30px;
+        padding: 0px 30px;
+
     }
 
     .sideMenu div span {
         display: none;
+
     }
 
     .contentSection {
 
         width: 100%;
         order: 2;
+
     }
 
     .logoutSection {
@@ -208,7 +208,7 @@ hr {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 0px 0px 0px 20px;
+        border-radius: 0px 0px 0px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -226,13 +226,69 @@ hr {
     }
 
 
-    .contentHeader .contentHeaderLogo {
-        width: 8%;
-        padding: 0px 0px;
+    .contentHeader .contentHeaderLogo img {
+        height: 60px;
+        visibility: hidden;
+        width: 60px;
     }
 
-    .contentHeader .contentHeaderLogo img {
-        display: block;
+
+    .logoutSection {
+        cursor: pointer;
+        display: none;
+
+    }
+
+    .contentHeaderLogot {
+        height: 30px;
+        visibility: visible;
+        width: 30px;
+    }
+
+    .sideMenuSection {
+        background-color: transparent;
+        width: 100%;
+        height: 9%;
+        font-size: 16px;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0px 0px 0px 0px rgba(211, 209, 209, 0.75);
+        top: 91.3%;
+
+
+    }
+
+
+    .sideMenu {
+
+        width: 100%;
+    }
+
+    .sideMenu div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    hr {
+        margin: 10px 10px;
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        overflow-y: scroll;
+        padding-bottom: 50px;
     }
 
 
@@ -244,12 +300,34 @@ hr {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .sideMenu div svg {
         /* Adjust icon size for smaller screens */
         width: 25px;
         height: 25px;
     }
+
+    .contentHeader {
+        height: 100px;
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+
 }
 
 /* Media query for even smaller screens */
@@ -263,6 +341,28 @@ hr {
     .contentSection {
         overflow: hidden;
     }
+
+    .contentHeader {
+        height: 80px;
+        width: 100%;
+        background-image: url("../../assets/Header-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        overflow-y: scroll;
+        padding-bottom: 80px;
+    }
+
 }
 
 
@@ -315,8 +415,11 @@ hr {
     }
 
     .contentSection {
+
         width: 100%;
         order: 2;
+
+
     }
 
     .logoutSection {
@@ -325,13 +428,13 @@ hr {
     }
 
     .contentHeader {
-        height: 60px;
+        height: 80px;
         width: 100%;
         background-image: url("../../assets/Header-bg.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 0px 0px 0px 20px;
+        border-radius: 0px 0px 0px 22px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -362,6 +465,14 @@ hr {
     .contentHeader .contentHeaderLogo img {
         height: 20px;
         width: 20px;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        overflow-y: scroll;
+        padding-bottom: 95px;
     }
 
 

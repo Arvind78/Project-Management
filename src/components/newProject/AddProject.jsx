@@ -6,7 +6,7 @@ import axios from 'axios';
 const AddProject = () => {
   const [error, setError] = useState(null);
   const [api, contextHolder] = notification.useNotification();
-  
+
   const [projectDetails, setProjectDetails] = useState({
     project: '',
     reason: '',
@@ -54,19 +54,19 @@ const AddProject = () => {
         description: err.response.data.message
       })
     })
-      setProjectDetails({
-        project: '',
-        reason: '',
-        type: '',
-        division: '',
-        category: '',
-        priority: '',
-        department: '',
-        startDate: '',
-        endDate: '',
-        location: '',
-      });
-      setError(null);
+    setProjectDetails({
+      project: '',
+      reason: '',
+      type: '',
+      division: '',
+      category: '',
+      priority: '',
+      department: '',
+      startDate: '',
+      endDate: '',
+      location: '',
+    });
+    setError(null);
   }
 
   return (
@@ -168,8 +168,8 @@ const AddProject = () => {
 
           <div className={styles.fieldGroup}>
             <label htmlFor="endData" >End Date as Project Plan</label>
-            <input type='date' style={error&&{color:"red",borderColor:"red"}} placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
-            {error && <div style={error&&{color:"red",borderColor:"red"}} className={styles.error}>{error}</div>}
+            <input type='date' style={error && { color: "red", borderColor: "red" }} placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
+            {error && <div style={error && { color: "red", borderColor: "red" }} className={styles.error}>{error}</div>}
           </div>
 
           <div className={styles.fieldGroup}>

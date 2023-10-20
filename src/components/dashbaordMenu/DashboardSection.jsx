@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import styles from './DashboardSection.module.css';
@@ -20,7 +20,17 @@ import logOut2 from '../../assets/Logout2.svg'
 const DashboardSection = () => {
   const navigate = useNavigate();
   const [path, setPath] = useState('dashboard');
+  const [windowWidth, setWindowWidth] = useState("")
+
   const [title, setTitle] = useState('dashboard');
+
+  useEffect(() => {
+
+    setInterval(() => {
+      setWindowWidth(window.innerWidth)
+    }, 0);
+
+  }, [windowWidth]);
 
   // Handle menu item click
   const handleMenu = (currentPath, title) => {
@@ -30,22 +40,27 @@ const DashboardSection = () => {
 
   // Handle logout
   const handleLogout = () => {
-    const confirmLogout = window.confirm('Are you sure you want to logout?');
-    if (confirmLogout) {
-      // Perform logout logic here, such as clearing user session, etc.
-      sessionStorage.removeItem('userToken');
-      navigate('/');
-    }
+
+    // Perform logout logic here, such as clearing user session, etc.
+    sessionStorage.removeItem('userToken');
+    navigate('/');
+
   };
 
   return (
     <div className={styles.DashboardSection}>
+
       <div className={styles.sideMenuSection}>
         <div className={styles.sidelogo}>
-     
+
         </div>
         <div className={styles.sideMenu}>
-          <div  style={{borderLeft:(path === 'dashboard') &&"5px solid #04559f",borderRadius:"3px"}}  onClick={() => handleMenu('dashboard', 'dashboard')}>
+          <div id='one' style={
+            (windowWidth > 800) ?
+              { borderLeft: (path === 'dashboard') && "5px solid #04559f", borderRadius: "3px" }
+              : { borderBottom: (path === 'dashboard') && "5px solid #04559f", borderRadius: "3px" }
+
+          } onClick={() => handleMenu('dashboard', 'dashboard')}>
             {path === 'dashboard' ? (
               <img src={dashActive} size={35} color='#1475cf' />
             ) : (
@@ -55,7 +70,12 @@ const DashboardSection = () => {
 
           </div>
 
-          <div style={{borderLeft:(path === 'showProject') &&"5px solid #04559f", borderRadius:"3px"}} onClick={() => handleMenu('showProject', 'Project List')}>
+          <div id='two' style={
+            (windowWidth > 800) ?
+              { borderLeft: (path === 'showProject') && "5px solid #04559f", borderRadius: "3px" }
+              :
+              { borderBottom: (path === 'showProject') && "5px solid #04559f", borderRadius: "3px" }
+          } onClick={() => handleMenu('showProject', 'Project List')}>
             {path === 'showProject' ? (
               <img src={projectActive} size={35} color='#1475cf' />
             ) : (
@@ -65,7 +85,13 @@ const DashboardSection = () => {
 
           </div>
           <hr />
-          <div style={{borderLeft:(path === 'newProject') &&"5px solid #04559f",borderRadius:"3px"}} onClick={() => handleMenu('newProject', 'Create Project')}>
+          <div id="three" style={
+            (windowWidth > 800) ?
+              { borderLeft: (path === 'newProject') && "5px solid #04559f", borderRadius: "3px" }
+              :
+              { borderBottom: (path === 'newProject') && "5px solid #04559f", borderRadius: "3px" }
+
+          } onClick={() => handleMenu('newProject', 'Create Project')}>
             {path === 'newProject' ? (
               <img src={createActive} size={35} color='#1475cf' />
             ) : (
@@ -76,22 +102,39 @@ const DashboardSection = () => {
           </div>
 
         </div>
-        <div className={styles.logoutSection} onClick={handleLogout}>
+        <div
+          style={
+            (windowWidth > 800) ?
+              { display: "block" }
+              :
+              { display: "none" }
+
+          }
+          className={styles.logoutSection} onClick={handleLogout}>
 
           <img src={logOut} size={35} color='#1475cf' />
 
         </div>
       </div>
+
       <div className={styles.contentSection}>
         <div className={styles.contentHeader}>
           <div className={styles.contentHeaderTitle}>
             <img src={arrow} alt='' />
             <span>{title}</span>
           </div>
+
           <div className={styles.contentHeaderLogo}>
 
 
-            <img src={logOut2} style={{ height: "35px", width: "35px", color: "-moz-initial", cursor: "pointer" }} onClick={handleLogout} />
+            <img src={logo} />
+
+
+          </div>
+          <div className={styles.contentHeaderLogot}>
+
+
+            <img src={logOut2} style={{ height: "100%", width: "100%", color: "-moz-initial", cursor: "pointer" }} onClick={handleLogout} />
 
 
           </div>

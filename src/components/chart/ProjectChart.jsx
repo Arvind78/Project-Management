@@ -32,10 +32,10 @@ const ProjectChart = () => {
     chart: {
       type: 'column',
       backgroundColor: '#fff', // Set chart background color
-      height: '400px', 
+      height:'300px', 
       borderRadius:"8px",
       padding:"55px",
-      maxiWdth:"900px"// Set chart height
+      minWidth:"900px"// Set chart height
     },
     title: {
       text: null, // Remove chart title
@@ -105,24 +105,9 @@ const ProjectChart = () => {
         },
       }, {
         condition: {
-          maxWidth: 240, 
-          chartOptions: {
-            xAxis: {
-              labels: {
-                rotation: 0, // Rotate x-axis labels if needed for better visibility
-              },
-            },
-          },
-          // Adjust based on your design needs
+          maxWidth: 240, // Adjust based on your design needs
         },
         chartOptions: {
-          chartOptions: {
-            xAxis: {
-              labels: {
-                rotation: 0, // Rotate x-axis labels if needed for better visibility
-              },
-            },
-          },
           xAxis: {
             labels: {
               rotation: -45, // Rotate x-axis labels for better visibility on smaller screens
@@ -134,7 +119,7 @@ const ProjectChart = () => {
   };
 
   return (
-    <div className="project-chart" style={{ padding: '16px' }}>
+    <div>
       {chartData && <HighchartsReact highcharts={Highcharts} options={options} />}
     </div>
   );

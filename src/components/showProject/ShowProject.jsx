@@ -10,8 +10,8 @@ const ShowProject = () => {
   const [searchValue, setSearchValue] = useState("");
   const [windowWidth, setWindowWidth] = useState("")
   const [selectedSortOption, setSelectedSortOption] = useState(''); // State to track selected sorting option
-  const [loading,setLoading] =useState(false)
-   
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
 
     setInterval(() => {
@@ -36,7 +36,7 @@ const ShowProject = () => {
 
   // Handle project status change (Running, Closed, Cancelled)
   const handleStatus = (id, status) => {
-  
+
     axios.post("https://project-manegement.onrender.com/api/update", { id, status })
       .then(() => {
         getData();
@@ -55,7 +55,7 @@ const ShowProject = () => {
     } else {
       // Perform case-insensitive search
       const searchLowerCase = searchValue.toLowerCase();
-    const searchData= data.filter(item => {
+      const searchData = data.filter(item => {
         // Filter based on relevant fields; adjust as per your data structure
         return (
           item.project.toLowerCase().includes(searchLowerCase) ||
@@ -111,9 +111,9 @@ const ShowProject = () => {
     Status: item.status,
     update: (
       <div className={styles.btnGroup}>
-        <Button type={"primary"}    onClick={() => handleStatus(item._id, "Running")}>Start</Button>
-        <Button  type={"default"}    onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
-        <Button  type={"default"}    onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
+        <Button type={"primary"} onClick={() => handleStatus(item._id, "Running")}>Start</Button>
+        <Button type={"default"} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
+        <Button type={"default"} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
       </div>
     ),
   }));
@@ -173,7 +173,7 @@ const ShowProject = () => {
   ];
 
   return (
-    <>
+    < div className={styles.showDataContainer}>
       <div className={styles.searchBar}>
         <div className={styles.sortOption}>
           <input
@@ -190,7 +190,7 @@ const ShowProject = () => {
           <label htmlFor="sortOptions">Sort By: </label>
           <select
             id="sortOptions"
-            style={{borderRadius:"3px",padding:'5px'}}
+            style={{ borderRadius: "3px", padding: '5px' }}
             className={styles.sortSelect}
             value={selectedSortOption}
             onChange={(e) => setSelectedSortOption(e.target.value)}
@@ -208,18 +208,19 @@ const ShowProject = () => {
       {(windowWidth > 810) ?
         <div className={styles.tableContainer}>
           {/* Table component */}
-          <Table dataSource={dataSource} 
- 
-          pagination={{ PageSize: 20}}
-           loading={loading} columns={columns} />
+          <Table dataSource={dataSource}
+
+            pagination={{ pageSize: 6 }}
+            loading={loading} columns={columns} />
         </div>
         :
-        <MobileDataPreview data={data} loading={loading} prt  handleStatus={handleStatus} />
+
+        <MobileDataPreview data={data} loading={loading} prt handleStatus={handleStatus} />
+
       }
-    </>
+    </div>
   );
 };
 
 export default ShowProject;
 
- 
