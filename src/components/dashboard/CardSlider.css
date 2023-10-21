@@ -29,12 +29,13 @@
         display: flex;
         justify-content: space-between;
        gap:30px;
+       scroll-behavior: smooth;
       }
       
       .card-wrapper {
         display: flex;
         width: 100%;
-    
+     
     
       }
   }
