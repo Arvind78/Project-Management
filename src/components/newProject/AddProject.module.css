@@ -555,7 +555,7 @@ option {
         align-items: center;
         width: 100%;
         font-size: 16px;
-        margin: 0px 0px;
+        margin:8px  0px 0px 0px ;
 
     }
 }
@@ -642,7 +642,7 @@ option {
         align-items: center;
         width: 100%;
         font-size: 16px;
-        margin: 0px 0px;
+        margin: 8px 0px;
 
     }
 }
