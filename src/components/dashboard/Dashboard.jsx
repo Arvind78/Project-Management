@@ -32,7 +32,7 @@ const Dashboard = () => {
   useEffect(() => {
     containerRef.current.scrollLeft = scrollPosition;
 
-  }, [scrollPosition]);
+  }, []);
 
   return (
     <div className={styles.dashboard_container}>
