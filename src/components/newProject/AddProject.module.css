@@ -479,6 +479,7 @@ option {
         width: 100%;
         margin: 25px 0px;
         align-items: center;
+        margin-bottom: 28px;
 
     }
 
@@ -490,6 +491,7 @@ option {
         width: 90%;
 
         border-radius: 30px;
+        
     }
 
 
