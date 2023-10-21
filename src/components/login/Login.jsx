@@ -98,7 +98,7 @@ const Login = () => {
               <h3>Login to get started</h3>
             </div>
             <div className={styles.formGroup}>
-              <label htmlFor="email" className={styles.formLabel}>
+              <label style={formErrors.email &&{color:"red"}} htmlFor="email" className={styles.formLabel}>
                 Email
               </label>
               <input
@@ -113,7 +113,7 @@ const Login = () => {
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="password" className={styles.formLabel}>
+              <label style={formErrors.password &&{color:"red"}} htmlFor="password" className={styles.formLabel}>
                 Password
               </label>
               <Input.Password
