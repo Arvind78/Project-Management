@@ -36,33 +36,8 @@
       display: flex;
     }
     
-    .card-wrapper {
-      display: flex;
-      width: 100%;
-  
-  
-    }
+   
   }
-  
-
-  .slider-container {
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    justify-content: center;
- 
-    scroll-behavior: smooth; /* Add smooth scrolling behavior */
-  }
-  
-  .card-wrapper {
-    display: flex;
-  }
-  
-  .card-wrapper {
-    display: flex;
-    width: 100%;
-
-
-  }
+   
 
      
