@@ -112,9 +112,6 @@ const Dashboard = () => {
     <div className={styles.chart_container}>
         <ProjectChart data={data} />
       </div>
- 
- 
-    
    
     </div>
   );
