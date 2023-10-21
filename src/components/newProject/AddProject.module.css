@@ -82,7 +82,7 @@ option {
     background-color: #04559f;
     color: white;
     border: none;
-    padding: 12px 8px;
+    padding: 10px 5px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
@@ -429,6 +429,96 @@ option {
 
     }
 }
+
+
+@media (max-width:700px) {
+    .select {
+        width: 100%;
+        padding: 12px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .formGroup .button {
+        background-color: #04559f;
+        color: white;
+        border: none;
+        padding: 12px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        width: 30%;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 98%;
+
+        padding: 30px 0px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .formGroup2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0px 5px;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+
+
+    }
+
+
+
+    .formGroup2 .fieldGroup {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0px;
+
+    }
+
+    .formGroup {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .formGroup input {
+        width: 100%;
+        width: 60%;
+        padding: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    .status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+        margin: 0px 0px;
+
+    }
+}
+
 
 @media (max-width:350px) {
     .select {

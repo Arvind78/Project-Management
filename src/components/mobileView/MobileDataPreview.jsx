@@ -75,19 +75,19 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
     </div>
     
  
- {/* {loading &&
+ {loading &&
  <div className={styles.loaderCoantainer}>
         <div className={styles.loader}></div> 
       
        
         </div>  
-      } */}
-         {(data.lengt>0) &&
+      }
+         {data.length>0 &&
       <div className={styles.pagination}>
-      <button onClick={handlePrevPage} disabled={currentPage === 1}>
+      <button onClick={handlePrevPage}  disabled={currentPage === 1}>
       <FaAngleLeft size={18} /> 
       </button>
-      <span>Page:{currentPage}</span>
+      <span>Page: {currentPage}</span>
       <button onClick={handleNextPage} disabled={endIndex >= data.length}>
       <FaAngleRight size={18}/> 
       </button>
@@ -98,3 +98,4 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
 };
 
 export default MobileDataPreview;
+

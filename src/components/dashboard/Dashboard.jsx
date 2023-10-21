@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from "./Dashboard.module.css";
 import ProjectChart from '../chart/ProjectChart';
-import TextSlider from '../slider/SliderComponent';
-import SliderComponent from '../slider/SliderComponent';
+import './CardSlider.css'; // Import your card slider styles
+
+ 
 
 const Dashboard = () => {
   // State to store project data
@@ -52,8 +53,23 @@ const Dashboard = () => {
       });
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const containerRef = useRef(null);
+
+  const handleScroll = () => {
+    const scrollValue = containerRef.current.scrollLeft;
+    setScrollPosition(scrollValue);
+  };
+
+  useEffect(() => {
+    containerRef.current.scrollLeft = scrollPosition;
+
+  }, [scrollPosition]);
+
   return (
     <div className={styles.dashboard_container}>
+           <div className="slider-container" onScroll={handleScroll} ref={containerRef}>
+      <div className="card-wrapper">
    <div  className={styles.card_container}>
     
       <div className={styles.cardInfo}>
@@ -84,19 +100,27 @@ const Dashboard = () => {
       </div>
       <div className={styles.cardInfo}>
         <div className={styles.cardDeteils}>
-          <p>Csncelled</p>
+          <p>Cancelled</p>
           <h2>{projectData.canceledProjects}</h2>
         </div>
       </div>
    </div>
+      </div>
+    </div>
       {/* Project Chart */}
 
-<SliderComponent/>
-      <div className={styles.chart_container}>
+    <div className={styles.chart_container}>
         <ProjectChart data={data} />
       </div>
+ 
+ 
+    
+   
     </div>
   );
 };
 
 export default Dashboard;
+
+ 
+ 

@@ -1,0 +1,76 @@
+/* Card.css */
+ 
+  
+  /* CardSlider.css */
+  .slider-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+   gap: 50px;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    width: 100%;
+
+
+  }
+  
+  @media (max-width: 1400px) {
+    .slider-container {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+       gap:30px;
+      }
+      
+      .card-wrapper {
+        display: flex;
+        width: 100%;
+    
+    
+      }
+  }
+  
+
+    
+  @media (max-width: 450px) {
+    .slider-container {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+       gap:30px;
+      }
+      
+      .card-wrapper {
+        display: flex;
+        width: 100%;
+    
+    
+      }
+  }
+
+
+
+    
+  @media (max-width: 380px) {
+    .slider-container {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+       gap:30px;
+      }
+      
+      .card-wrapper {
+        display: flex;
+        width: 100%;
+    
+    
+      }
+  }
+  
+  

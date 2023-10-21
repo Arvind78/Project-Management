@@ -10,6 +10,12 @@
   padding: 20px 0px; /* Apply padding to the parent container */
 }
 
+.activePage {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
 /* Styles for the data preview box */
 .box-show {
   width: 50%; /* Set the initial width of the box */
@@ -36,12 +42,16 @@
 .pagination {
   display: flex;
   justify-content: center;
- 
   align-items: center;
   gap: 50px;
-  height: 500px;
-background-color: #3498db;
-  margin: 20px 0px; /* Apply margin to the pagination component */
+  margin:5px 0px; /* Apply margin to the pagination component */
+}
+
+.pagination button{
+  padding: 5px 10px;
+ outline: #3498db;
+ border-radius: 5px;
+ color: rgb(56, 134, 235);
 }
 .groupdiv {
  /* padding: 10px 0px; */

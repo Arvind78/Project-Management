@@ -1,6 +1,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-
+ 
 /* Reset Default Styles and Apply Custom Font */
 * {
     margin: 0;
@@ -93,7 +93,7 @@ input::placeholder {
 
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
-    background: #c9c8c8;
+    background: none;
     border-radius: 80px;
 }
 
@@ -105,19 +105,15 @@ option {
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 80px;
-    background: #979494;
+    background: none;
 }
 
 /* Scrollbar Handle on Hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #cccaca;
+    background: none;
 }
 
-.swiper-container{
- background-color: red;
- width: 100%;
-  
-}
+ 
 .swiper-wrapper{
     width: 100%;
     justify-content: center;
