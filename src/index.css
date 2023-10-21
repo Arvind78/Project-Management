@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
-  overflow-y: hidden;
 }
 
 .slick-slide img {
@@ -113,20 +112,7 @@ option {
     background: none;
 }
 
- 
-.swiper-wrapper{
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    padding: 0px;
-}
-.swiper-slide{
-    padding: 0px;
-    width: 20;
-    margin: 0%;
-}
-
-
+  
 /* Custom Styles for .ant-picker Class */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-picker {
     width: 250px;
@@ -156,9 +142,10 @@ option {
     position: relative;
     padding: 9px 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: black;
     overflow-wrap: break-word;
+    
 }
 
  
@@ -171,9 +158,10 @@ option {
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
         position: relative;
-        padding: 10px 5px;
+        padding: 5px 5px;
         text-align: center;
         font-size: 10px;
+        text-align: center;
         color: black;
         overflow-wrap: break-word;
     }
@@ -185,12 +173,19 @@ option {
     border-left:none;
 
      color: red;
+     width:40px;
+     padding:5px 20px;
     
     }
     #two{
         order: 3;  
+        width:40px;
+     padding: 5px 20px;
+
     }
     #three{
+        width:40px;
+        padding: 5px 20x;
    
     }
 }

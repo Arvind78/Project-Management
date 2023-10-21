@@ -51,7 +51,7 @@ const AddProject = () => {
       api.error({
         placement: "top",
         message: "New Add Project Field",
-        description: err.response.data.message
+        description: err.response?.data?.message
       })
     })
     setProjectDetails({

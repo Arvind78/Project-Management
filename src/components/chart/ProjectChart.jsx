@@ -34,12 +34,19 @@ const ProjectChart = () => {
       backgroundColor: '#fff', // Set chart background color
       height:'400px', 
       borderRadius:"8px",
-      padding:"55px",
-  
+    
     },
     title: {
 
-      text: "Department wise Total vs Closed", // Remove chart title
+      text: "Department wise Total vs Closed",
+      style: {
+        fontSize: '21px', // Set the font size of the title
+          textAlign: 'left', // Align the title text ('left', 'center', or 'right')
+        color:"#96a1a9"
+      }
+       // Remove chart title
+
+       
     },
     xAxis: {
       categories: chartData ? chartData.map(item => [item.successPercentage, item.name]) : [],
@@ -106,13 +113,19 @@ const ProjectChart = () => {
         },
       }, {
         condition: {
-          maxWidth: 290, // Adjust based on your design needs
+          maxWidth: 390, // Adjust based on your design needs
         },
         chartOptions: {
+          title: {
+            style: {
+                fontSize: '16px' // Adjust font size for smaller screens
+            }
+        },
           xAxis: {
             labels: {
-              rotation: -45, // Rotate x-axis labels for better visibility on smaller screens
+              rotation: -0, // Rotate x-axis labels for better visibility on smaller screens
             },
+
           },
         },
       }],
