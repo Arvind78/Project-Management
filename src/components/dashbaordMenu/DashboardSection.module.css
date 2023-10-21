@@ -212,10 +212,9 @@ hr {
         justify-content: space-evenly;
         align-items: center;
         position: absolute;
-        border-radius: 30px 30px 0px 0px;
-        box-shadow: 1px 0px 1px 0px rgba(211, 209, 209, 0.75);
-        top:93%;
-      background-color: aqua;
+        top:92.5%;
+        border-radius: 50px 50px 0px 0px;
+      background-color: rgb(255, 255, 255);
     }
     .sideMenu {
         width: 100%;
