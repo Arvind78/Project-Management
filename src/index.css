@@ -9,9 +9,9 @@
     font-family: 'Mulish', sans-serif;
 }
 
-/* Center images inside slick slider */
-.slick-slide img {
-    margin: auto;
+/* input lables inside some padding */
+label{
+    padding: 0px 2px;
 }
 
 /* Style custom input and select fields */

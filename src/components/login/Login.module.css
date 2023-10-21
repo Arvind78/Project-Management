@@ -369,9 +369,12 @@
         height: 22%;
         width: 100%;
     }
+
  .submitButton {
         /* Updated styles for smaller screens */
         width: 85%;
+   font-size: 19px;
+   padding: 10px 0px;
     }
 
     .popupContent {
