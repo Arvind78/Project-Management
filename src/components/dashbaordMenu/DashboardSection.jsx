@@ -121,7 +121,7 @@ const DashboardSection = () => {
         <div className={styles.contentHeader}>
           <div className={styles.contentHeaderTitle}>
             <img src={arrow} alt='' />
-            <span style={{textTransform:"capitalize"}}>{title}</span>
+            <span style={{textTransform:"capitalize",fontWeight:600}}>{title}</span>
           </div>
 
           <div className={styles.contentHeaderLogo}>

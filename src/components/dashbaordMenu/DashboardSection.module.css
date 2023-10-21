@@ -214,7 +214,7 @@ hr {
         position: absolute;
         border-radius: 4px;
         box-shadow: 0px 0px 0px 0px rgba(211, 209, 209, 0.75);
-        top: 89%;
+        top: 91.2%;
     }
     .sideMenu {
         width: 100%;
@@ -321,7 +321,7 @@ hr {
         padding: 6px 12px;
         align-items: center;
         position: absolute;
-        top: 90%;
+        top: 92%;
         left: 0%;
         justify-content: space-between;
     }
