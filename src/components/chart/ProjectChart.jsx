@@ -32,13 +32,14 @@ const ProjectChart = () => {
     chart: {
       type: 'column',
       backgroundColor: '#fff', // Set chart background color
-      height:'300px', 
+      height:'400px', 
       borderRadius:"8px",
       padding:"55px",
-      minWidth:"900px"// Set chart height
+  
     },
     title: {
-      text: null, // Remove chart title
+
+      text: "Department wise Total vs Closed", // Remove chart title
     },
     xAxis: {
       categories: chartData ? chartData.map(item => [item.successPercentage, item.name]) : [],
@@ -105,7 +106,7 @@ const ProjectChart = () => {
         },
       }, {
         condition: {
-          maxWidth: 240, // Adjust based on your design needs
+          maxWidth: 290, // Adjust based on your design needs
         },
         chartOptions: {
           xAxis: {

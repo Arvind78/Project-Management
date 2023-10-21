@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from "./Dashboard.module.css";
 import ProjectChart from '../chart/ProjectChart';
+import TextSlider from '../slider/SliderComponent';
+import SliderComponent from '../slider/SliderComponent';
 
 const Dashboard = () => {
   // State to store project data
@@ -52,41 +54,44 @@ const Dashboard = () => {
 
   return (
     <div className={styles.dashboard_container}>
-      {/* Project Information */}
-      <div className={styles.project_info_container}>
-        <div className={styles.project_info_item}>
-          <div className={styles.info}>
-            <p>Total Projects</p>
-            <h3>{projectData.totalProjects}</h3>
-          </div>
-        </div>
-        <div className={styles.project_info_item}>
-          <div className={styles.info}>
-            <p>Closed</p>
-            <h3>{projectData.closedProjects}</h3>
-          </div>
-        </div>
-        <div className={styles.project_info_item}>
-          <div className={styles.info}>
-            <p>Running</p>
-            <h3>{projectData.runningProjects}</h3>
-          </div>
-        </div>
-        <div className={styles.project_info_item}>
-          <div className={styles.info}>
-            <p>Closer Delay</p>
-            <h3>{projectData.delayedProjects}</h3>
-          </div>
-        </div>
-        <div className={styles.project_info_item}>
-          <div className={styles.info}>
-            <p>Cancelled</p>
-            <h3>{projectData.canceledProjects}</h3>
-          </div>
+   <div  className={styles.card_container}>
+    
+      <div className={styles.cardInfo}>
+        <div className={styles.cardDeteils}>
+          <p>Totol Project</p>
+          <h2>{projectData.totalProjects}</h2>
         </div>
       </div>
 
+      <div className={styles.cardInfo}>
+        <div className={styles.cardDeteils}>
+          <p>Closed</p>
+          <h2>{projectData.closedProjects}</h2>
+        </div>
+      </div>
+
+      <div className={styles.cardInfo}>
+        <div className={styles.cardDeteils}>
+          <p>Running</p>
+          <h2>{projectData.runningProjects}</h2>
+        </div>
+      </div>
+      <div className={styles.cardInfo}>
+        <div className={styles.cardDeteils}>
+          <p>Closer Delay</p>
+          <h2>{projectData.delayedProjects}</h2>
+        </div>
+      </div>
+      <div className={styles.cardInfo}>
+        <div className={styles.cardDeteils}>
+          <p>Csncelled</p>
+          <h2>{projectData.canceledProjects}</h2>
+        </div>
+      </div>
+   </div>
       {/* Project Chart */}
+
+<SliderComponent/>
       <div className={styles.chart_container}>
         <ProjectChart data={data} />
       </div>

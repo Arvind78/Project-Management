@@ -113,6 +113,23 @@ option {
     background: #cccaca;
 }
 
+.swiper-container{
+ background-color: red;
+ width: 100%;
+  
+}
+.swiper-wrapper{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+}
+.swiper-slide{
+    padding: 0px;
+    width: 20;
+    margin: 0%;
+}
+
 
 /* Custom Styles for .ant-picker Class */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-picker {

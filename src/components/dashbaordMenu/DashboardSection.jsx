@@ -60,7 +60,7 @@ const DashboardSection = () => {
               { borderLeft: (path === 'dashboard') && "5px solid #04559f", borderRadius: "3px" }
               : { borderBottom: (path === 'dashboard') && "5px solid #04559f", borderRadius: "3px" }
 
-          } onClick={() => handleMenu('dashboard', 'dashboard')}>
+          } onClick={() => handleMenu('dashboard', 'Dashboard')}>
             {path === 'dashboard' ? (
               <img src={dashActive} size={35} color='#1475cf' />
             ) : (
@@ -125,17 +125,10 @@ const DashboardSection = () => {
           </div>
 
           <div className={styles.contentHeaderLogo}>
-
-
             <img src={logo} />
-
-
           </div>
           <div className={styles.contentHeaderLogot}>
-
-
             <img src={logOut2} style={{ height: "100%", width: "100%", color: "-moz-initial", cursor: "pointer" }} onClick={handleLogout} />
-
 
           </div>
         </div>

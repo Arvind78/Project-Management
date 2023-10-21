@@ -1,10 +1,11 @@
+/* Styles for the dashboard section */
 .DashboardSection {
     height: 100vh;
     width: 100%;
     display: flex;
-
 }
 
+/* Styles for the side menu section */
 .sideMenuSection {
     background-color: rgb(255, 255, 255);
     width: 65px;
@@ -21,8 +22,8 @@
     top: 0%;
 }
 
+/* Styles for the side menu */
 .sideMenu {
-
     width: 100%;
 }
 
@@ -38,12 +39,9 @@
 
 hr {
     margin: 10px 10px;
-
 }
 
-/* -========================================================== */
-
-
+/* Content header styles */
 .contentHeader {
     height: 110px;
     width: 100%;
@@ -57,28 +55,24 @@ hr {
     align-items: center;
     padding: 0px 5% 0px 0px;
     position: relative;
-
 }
 
+/* Styles for the content section */
 .contentSection {
     width: 100%;
     height: 100%;
-
-    /* background-color: red;  */
-
 }
 
+/* Styles for the main content area */
 .content {
     width: 100%;
     height: 100%;
     padding: 0px 10px;
     overflow-y: scroll;
-    margin-bottom: 0px;
 }
 
-
+/* Styles for the content header title */
 .contentHeader .contentHeaderTitle {
-
     display: flex;
     justify-content: start;
     align-items: center;
@@ -93,14 +87,14 @@ hr {
     width: 18px;
 }
 
-
-
+/* Styles for the content header logo */
 .contentHeader .contentHeaderLogo img {
     height: 60px;
     width: 60px;
     padding: 0px 0px 15px 0px;
 }
 
+/* Styles for the logout section */
 .logoutSection {
     cursor: pointer;
 }
@@ -111,42 +105,36 @@ hr {
     width: 30px;
 }
 
-@media (max-width:900px) {
+/* Media query for screens up to 900px */
+@media (max-width: 900px) {
     .sideMenuSection {
         background-color: rgb(250, 249, 247);
         width: 50px;
-
         font-size: 16px;
-
         display: flex;
         flex-direction: column;
-
         align-items: center;
     }
-
     .sideMenu div span {
         display: none;
     }
 }
 
-
-@media (max-width:800px) {
+/* Media query for screens up to 800px */
+@media (max-width: 800px) {
+    /* Adjust styles for responsive layout */
 
     .DashboardSection {
         height: 100vh;
         width: 100%;
         position: relative;
     }
-
     .contentSection {
         width: 100%;
         overflow-y: hidden;
-
     }
-
     .sideMenuSection {
         width: 100%;
-
         display: flex;
         padding: 6px 12px;
         align-items: center;
@@ -157,23 +145,19 @@ hr {
         justify-content: space-between;
         z-index: 9;
     }
-
     .sideMenu {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .content {
         width: 100%;
         height: 100%;
         padding: 0px 10px;
         overflow-y: scroll;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
-
-
     .sideMenu div {
         width: 100%;
         display: flex;
@@ -181,26 +165,18 @@ hr {
         align-items: center;
         gap: 5px;
         padding: 0px 30px;
-
     }
-
     .sideMenu div span {
         display: none;
-
     }
-
     .contentSection {
-
         width: 100%;
         order: 2;
-
     }
-
     .logoutSection {
         height: 0;
         display: block;
     }
-
     .contentHeader {
         height: 60px;
         width: 100%;
@@ -213,7 +189,6 @@ hr {
         justify-content: space-between;
         align-items: center;
     }
-
     .contentHeader .contentHeaderTitle {
         width: 92%;
         display: flex;
@@ -224,27 +199,20 @@ hr {
         color: aliceblue;
         padding: 0px 15px;
     }
-
-
     .contentHeader .contentHeaderLogo img {
         height: 60px;
         visibility: hidden;
         width: 60px;
     }
-
-
     .logoutSection {
         cursor: pointer;
         display: none;
-
     }
-
     .contentHeaderLogot {
         height: 30px;
         visibility: visible;
         width: 30px;
     }
-
     .sideMenuSection {
         background-color: transparent;
         width: 100%;
@@ -257,17 +225,11 @@ hr {
         position: absolute;
         border-radius: 4px;
         box-shadow: 0px 0px 0px 0px rgba(211, 209, 209, 0.75);
-        top: 91.3%;
-
-
+        top: 91.2%;
     }
-
-
     .sideMenu {
-
         width: 100%;
     }
-
     .sideMenu div {
         display: flex;
         justify-content: center;
@@ -277,12 +239,10 @@ hr {
         cursor: pointer;
         width: 100%;
     }
-
     hr {
         margin: 10px 10px;
         display: none;
     }
-
     .content {
         width: 100%;
         height: 100%;
@@ -290,23 +250,16 @@ hr {
         overflow-y: scroll;
         padding-bottom: 50px;
     }
-
-
 }
 
-.sideMenu div svg {
-    width: 35px;
-    height: 35px;
-}
-
-/* Media query for smaller screens */
+/* Additional media queries for smaller screen sizes */
 @media (max-width: 800px) {
+    /* Adjust styles for smaller screens */
+
     .sideMenu div svg {
-        /* Adjust icon size for smaller screens */
         width: 25px;
         height: 25px;
     }
-
     .contentHeader {
         height: 100px;
         width: 100%;
@@ -319,7 +272,6 @@ hr {
         justify-content: space-between;
         align-items: first baseline;
     }
-
     .content {
         width: 100%;
         height: 100%;
@@ -327,21 +279,19 @@ hr {
         overflow-y: scroll;
         padding-bottom: 100px;
     }
-
 }
 
 /* Media query for even smaller screens */
 @media (max-width: 480px) {
+    /* Further adjust styles for very small screens */
+
     .sideMenu div svg {
-        /* Further adjust icon size for very small screens */
         width: 25px;
         height: 25px;
     }
-
     .contentSection {
         overflow: hidden;
     }
-
     .contentHeader {
         height: 80px;
         width: 100%;
@@ -354,53 +304,44 @@ hr {
         justify-content: space-between;
         align-items: center;
     }
-
     .content {
         width: 100%;
         height: 100%;
         padding: 0px 10px;
         overflow-y: scroll;
-        padding-bottom: 80px;
+        padding-bottom: 85px;
     }
-
 }
 
-
-@media (max-width:380px) {
+/* Media query for very small screens */
+@media (max-width: 380px) {
+    /* Further adjust styles for very small screens */
 
     .DashboardSection {
         height: 100vh;
         width: 100%;
-
         position: relative;
-
     }
-
     .contentSection {
         width: 100%;
         overflow-y: hidden;
     }
-
     .sideMenuSection {
         width: 100%;
-
         display: flex;
         padding: 6px 12px;
         align-items: center;
         position: absolute;
-        top: 90%;
+        top: 92%;
         left: 0%;
         justify-content: space-between;
-
     }
-
     .sideMenu {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .sideMenu div {
         width: 100%;
         display: flex;
@@ -409,24 +350,17 @@ hr {
         gap: 5px;
         padding: 10px 15px;
     }
-
     .sideMenu div span {
         display: none;
     }
-
     .contentSection {
-
         width: 100%;
         order: 2;
-
-
     }
-
     .logoutSection {
         height: 0;
         display: block;
     }
-
     .contentHeader {
         height: 80px;
         width: 100%;
@@ -439,7 +373,6 @@ hr {
         justify-content: space-between;
         align-items: center;
     }
-
     .contentHeader .contentHeaderTitle {
         width: 90%;
         display: flex;
@@ -450,30 +383,19 @@ hr {
         color: aliceblue;
         padding: 0px 15px;
     }
-
-    /* .contentHeader .contentHeaderTitle img {
-        height: 15px;
-        width: 15px;
-    } */
-
     .contentHeader .contentHeaderLogo {
-
         width: 10%;
         padding: 0px 0px;
     }
-
     .contentHeader .contentHeaderLogo img {
         height: 20px;
         width: 20px;
     }
-
     .content {
         width: 100%;
         height: 100%;
         padding: 0px 10px;
         overflow-y: scroll;
-        padding-bottom: 95px;
+        padding-bottom: 100px;
     }
-
-
 }
