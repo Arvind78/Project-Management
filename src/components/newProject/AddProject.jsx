@@ -83,7 +83,7 @@ const AddProject = () => {
         {/* Project Information */}
         <div className={styles.formGroup2}>
           <div className={styles.fieldGroup}>
-            <label htmlFor="reason">reason</label>
+            <label htmlFor="reason">Reason</label>
             <select id="reason" className={styles.select} name="reason" value={projectDetails.reason} onChange={handleInputChange}>
               <option value=""> Reason</option>
               <option value="Business"> For Business</option>
