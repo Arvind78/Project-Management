@@ -190,6 +190,9 @@ const AddProject = () => {
         <div className={styles.status}>
           <p>Status: <b>Registered</b></p>
         </div>
+        <div className={styles.summitBottombtn}>
+          <button type="submit" className={styles.button} onClick={handelNewProject} >Save Project</button>
+        </div>
       </form>
     </div>
   );

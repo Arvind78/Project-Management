@@ -288,7 +288,7 @@ hr {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 0px 0px 0px 25px;
+        border-radius: 0px 0px 0px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -358,7 +358,7 @@ hr {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 0px 0px 0px 22px;
+        border-radius: 0px 0px 0px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
