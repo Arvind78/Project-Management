@@ -121,7 +121,7 @@ const DashboardSection = () => {
         <div className={styles.contentHeader}>
           <div className={styles.contentHeaderTitle}>
             <img src={arrow} alt='' />
-            <span>{title}</span>
+            <span style={{textTr}}>{title}</span>
           </div>
 
           <div className={styles.contentHeaderLogo}>
