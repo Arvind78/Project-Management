@@ -198,6 +198,11 @@ const Popup = () => {
         setLoading(false)
 
       }).catch((err) => {
+        api.error({
+          placement: "top",
+          message: "Email doesn't ragisterd .",
+          description: err.response.data.message
+        })
         setLoading(false)
 
         throw err
@@ -238,7 +243,8 @@ const Popup = () => {
       else {
         setLoading(true)
 
-        axios.post("https://project-manegement.onrender.com/api/forget", { userId, newPassword }).then((res) => {
+        axios.post("https://project-manegement.onrender.com/api/forget", 
+        { userId, newPassword }).then((res) => {
           api.success({
             placement: "top",
             message: "Reset password Success",
@@ -248,9 +254,11 @@ const Popup = () => {
         }).catch((err) => {
           api.error({
             placement: "top",
-            message: "Ragiter",
+            message: "Internal server error",
             description: err.response?.data?.message
           })
+          console.log(err.response?.data?.message);
+
           setLoading(false)
           throw err
         })

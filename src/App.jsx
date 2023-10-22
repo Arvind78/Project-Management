@@ -20,6 +20,7 @@ const App = () => {
       // If user token does not exist, set error message and redirect to the home page after 5 seconds
       setError('User not authorized');
       const redirectTimer = setTimeout(() => {
+     
         navigate('/');
       }, 5000); // Redirect time: 5 seconds
 

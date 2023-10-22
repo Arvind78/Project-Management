@@ -3,6 +3,8 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0;
 }
 
 /* Styles for the side menu section */
@@ -43,7 +45,7 @@ hr {
 
 /* Content header styles */
 .contentHeader {
-    height: 85px;
+    height:95px;
     width: 100%;
     background-image: url("../../assets/Header-bg.svg");
     background-repeat: no-repeat;
@@ -54,7 +56,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 0px 5% 0px 0px;
-    position: relative;
+    position: relative;  
 }
 
 /* Styles for the content section */
@@ -89,8 +91,8 @@ hr {
 
 /* Styles for the content header logo */
 .contentHeader .contentHeaderLogo img {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     padding: 0px 0px 10px 0px;
 }
 
