@@ -14,6 +14,11 @@
     display: none;
 }
 
+.summitBottombtn .button:hover{
+    transition: 400ms ease-in;
+    background-color:#2793f8 ;
+}
+
 .form {
     display: flex;
     flex-direction: column;
