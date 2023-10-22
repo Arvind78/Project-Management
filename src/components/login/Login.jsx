@@ -238,7 +238,7 @@ const Popup = () => {
       else {
         setLoading(true)
 
-        axios.put("https://project-manegement.onrender.com/api/forget", { userId, newPassword }).then((res) => {
+        axios.post("https://project-manegement.onrender.com/api/forget", { userId, newPassword }).then((res) => {
           api.success({
             placement: "top",
             message: "Reset password Success",
