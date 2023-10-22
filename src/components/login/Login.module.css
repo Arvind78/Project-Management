@@ -110,15 +110,17 @@
 .errorFormInput {
     padding: 10px;
     border-radius: 5px;
-    border: 0.5px solid #da0303c7;
+    border: 0.5px solid red;
     outline: none;
+    color: red;
 }
 
 .errorformInputPassword {
     padding: 0px;
     border-radius: 5px;
-    border: 0.5px solid #da0303c7;
+    border: 0.5px solid red;
     outline: none;
+    color:red;
     background-color: transparent;
 }
 
