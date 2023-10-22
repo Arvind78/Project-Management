@@ -336,6 +336,62 @@
   /* Sort Option Input Styles */
   .sortOptionInput {
     padding: 5px 4px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    border: 0.2px solid rgb(134, 134, 134);
+
+    outline: none;
+  }
+
+}
+
+
+
+
+@media (max-width: 340px) {
+ 
+  .searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px 0px;
+    position: sticky;
+    background-color: #fff;
+    top: 0px;
+    font-size: 13px;
+    z-index: 44;
+  }
+
+  /* Sort Option Styles */
+  .sortOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+    width: 40%;
+  
+    padding: 0px 0px;
+  }
+
+  /* Sort Option Select Styles */
+  .sortOptionSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    border: none;
+    width: 40%;
+    outline: none;
+    padding: 5px 0px;
+  }
+
+  /* Sort Option Input Styles */
+  .sortOptionInput {
+    padding: 5px 4px;
     width: 80%;
     border: none;
     border-radius: 5px;
