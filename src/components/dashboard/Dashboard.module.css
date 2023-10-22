@@ -12,7 +12,7 @@
 /* Styles for the chart container */
 .chart_container {
     width: 60%;
-    height: 100%;
+    height: 500px;
     box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
     border-radius: 5px;
     margin: 20px 0px;
@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    width: 98%;
     z-index: 6;
 
     padding-right: 50px;
@@ -265,7 +265,7 @@ position: relative;
 @media (max-width: 800px) {
     .chart_container {
         width: 97%;
-        height: 400px;
+        height: auto;
         margin-top: 30px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         padding:0px 10px;
@@ -281,7 +281,7 @@ position: relative;
         width: 18%;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
-        height: 70px;
+        height: 60px;
     }
 
     /* Styles for card details */
@@ -311,7 +311,7 @@ position: relative;
     /* Styles for the chart container */
     .chart_container {
         width: 97%;
-        height: 100%;
+        height:auto;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         border-radius: 5px;
         margin: 10px 0px;
@@ -325,6 +325,7 @@ position: relative;
         align-items: center;
         gap: 10px;
         width: 100%;
+      margin: 5px 0px;
         padding-right: 00px;
     }
 
@@ -335,7 +336,8 @@ position: relative;
         width: 18%;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
-        height: 70px;
+        height: 60px;
+
     }
 
     /* Styles for card details */
@@ -365,7 +367,7 @@ position: relative;
     /* Styles for the chart container */
     .chart_container {
         width: 97%;
-        height: 100%;
+        height:auto;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         border-radius: 5px;
         margin: 10px 0px;
@@ -418,7 +420,7 @@ position: relative;
     /* Styles for the chart container */
     .chart_container {
         width: 97%;
-        height: 100%;
+        height: auto;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         border-radius: 5px;
         margin: 10px 0px;
@@ -473,7 +475,7 @@ position: relative;
      /* Styles for the chart container */
     .chart_container {
         width: 97%;
-        height: 100%;
+      height: auto;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         border-radius: 5px;
         margin: 10px 0px;

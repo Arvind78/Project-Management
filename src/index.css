@@ -26,10 +26,16 @@ input.ant-input.css-dev-only-do-not-override-3mqfnx {
 }
 
 /* Pagination styles */
-:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination .ant-pagination-item-active a,
-:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination a {
+:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination .ant-pagination-item-active a{
     background-color: #4096ff;
     color: #fff;
+    border: 0.5px solid #4096ff;
+    border: none;
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-pagination a {
+    background-color: #fff;
+    color:  #4096ff;;
     border-radius: 2px;
     border: 0.5px solid #4096ff;
 }

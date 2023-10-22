@@ -46,13 +46,7 @@
   gap: 50px;
   margin:5px 0px; /* Apply margin to the pagination component */
 }
-
-.pagination button{
-  padding: 5px 10px;
- outline: #3498db;
- border-radius: 5px;
- color: rgb(56, 134, 235);
-}
+ 
 .groupdiv {
  /* padding: 10px 0px; */
 text-align: right;

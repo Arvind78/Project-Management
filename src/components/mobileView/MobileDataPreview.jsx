@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import styles from './MobileDataPreview.module.css'; // Import the CSS module
 import {FaAngleLeft ,FaAngleRight} from "react-icons/fa6"
-import { Button } from 'antd';
+import { Button, Pagination } from 'antd';
 const MobileDataPreview = ({ data ,handleStatus,loading}) => {
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
@@ -84,13 +84,12 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
       }
          {data.length>0 &&
       <div className={styles.pagination}>
-      <button onClick={handlePrevPage}  disabled={currentPage === 1}>
-      <FaAngleLeft size={18} /> 
-      </button>
-      <span>Page: {currentPage}</span>
-      <button onClick={handleNextPage} disabled={endIndex >= data.length}>
-      <FaAngleRight size={18}/> 
-      </button>
+         <Pagination
+        current={currentPage}
+        total={data.length}
+        pageSize={itemsPerPage}
+        onChange={setCurrentPage}
+      />
     </div>
 }
     </>
