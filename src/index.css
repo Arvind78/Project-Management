@@ -7,6 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    scroll-behavior: smooth; /* Add smooth scrolling behavior */
+
 }
 
 /* input lables inside some padding */
