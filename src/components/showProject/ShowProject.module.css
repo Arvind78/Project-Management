@@ -187,6 +187,10 @@
 
     width: 92.1%;
   }
+  .searchBar{
+    box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
+
+  }
 }
 
 @media (max-width:800px) {
@@ -279,7 +283,7 @@
 
   /* Sort Option Input Styles */
   .sortOptionInput {
-    padding: 5px 0px;
+    padding: 5px 3px;
     border: none;
     border-radius: 5px;
     border: 0.5px solid rgb(134, 134, 134);
