@@ -87,6 +87,7 @@ option {
     height: 100%;
 }
 
+
 .formGroup .button {
     background-color: #04559f;
     color: white;
@@ -327,6 +328,9 @@ option {
 
     }
 
+    .formGroup input:focus{
+        outline-color: #92c7f8;
+    }
     .form {
         display: flex;
         flex-direction: column;
@@ -639,6 +643,10 @@ option {
         border: 1px solid #ccc;
         border-radius: 4px;
 
+    }
+
+    .formGroup input:focus{
+        outline-color: #2793f8;
     }
 
     .status {
