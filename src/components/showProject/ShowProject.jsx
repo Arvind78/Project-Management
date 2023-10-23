@@ -37,7 +37,7 @@ const ShowProject = () => {
   // Handle project status change (Running, Closed, Cancelled)
   const handleStatus = (id, status) => {
 
-    axios.post("https://project-manegement.onrender.com/api/update", { id, status })
+    axios.put("https://project-manegement.onrender.com/api/update", { id, status })
       .then(() => {
         getData();
       })
