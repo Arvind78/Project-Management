@@ -12,7 +12,7 @@
 /* Styles for the chart container */
 .chart_container {
     width: 60%;
-    height: 500px;
+    height: auto;
     box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
     border-radius: 5px;
     margin: 20px 0px;
@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: 98%;
+    width:90%;
     z-index: 6;
 
     padding-right: 50px;
@@ -101,7 +101,7 @@
 @media (max-width: 1150px) {
     .chart_container {
         width: 80%;
-        height: 400px;
+        height: auto;
         margin-top: 10px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         padding:0px 0px;
@@ -150,7 +150,7 @@
 
     .chart_container {
         width: 90%;
-        height: 400px;
+        height:auto;
         margin-top: 10px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         padding: 10px;
@@ -163,7 +163,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        width: 100%;
+     
         padding-right: 10px;
     }
  
@@ -204,7 +204,7 @@
 @media (max-width: 900px) {
     .chart_container {
         width: 90%;
-        height: 400px;
+        height: auto;
         margin-top: 10px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         padding: 0px 10px;
@@ -227,17 +227,17 @@ position: relative;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        width: 100%;
         padding-right: 10px;
+       
 
     }
     .card_container .cardInfo {
         background-color: #0477f1;
         border-radius: 5px;
-        width: 18%;
+        width: 16%;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
-        height: 70px;
+        height: 60px;
     }
 
     /* Styles for card details */
@@ -263,6 +263,7 @@ position: relative;
 
 /* Media query for screens up to 800px */
 @media (max-width: 800px) {
+    
     .chart_container {
         width: 97%;
         height: auto;
@@ -271,6 +272,10 @@ position: relative;
         padding:0px 10px;
         border-radius: 5px;
     }
+    .card_container{
+        width:100%;
+    /* padding-left: 10px; */
+    }
 
     .cardDeteils {
         height: 100%;
@@ -278,7 +283,7 @@ position: relative;
     .card_container .cardInfo {
         background-color: #0477f1;
         border-radius: 5px;
-        width: 18%;
+        width:20%;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         height: 60px;
@@ -324,16 +329,15 @@ position: relative;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-        width: 100%;
       margin: 5px 0px;
-        padding-right: 00px;
+        padding-right: 10px;
     }
 
     /* Styles for the card info */
     .card_container .cardInfo {
         background-color: #0477f1;
         border-radius: 5px;
-        width: 18%;
+        width: 150px;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         height: 60px;
@@ -381,7 +385,7 @@ position: relative;
         align-items: center;
         gap: 10px;
         width: 100%;
-        padding-right: 00px;
+        padding-right:10px;
     }
 
     /* Styles for the card info */
@@ -433,8 +437,8 @@ position: relative;
         justify-content: space-evenly;
         align-items: center;
         gap: 8px;
-        width: 100%;
-        padding-right: 00px;
+        width:700px;
+        padding-right: 10px;
         
     }
 
@@ -446,6 +450,7 @@ position: relative;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         height: 60px;
+        width: 150px;
     }
 
     /* Styles for card details */
@@ -489,7 +494,7 @@ position: relative;
         align-items: center;
         gap: 8px;
         width: 800px;
-        padding-right: 00px;
+        padding-right: 10px;
         
     }
 
@@ -497,7 +502,7 @@ position: relative;
     .card_container .cardInfo {
         background-color: #0477f1;
         border-radius: 5px;
-        width:200px;
+        width:130px;
         padding-left: 8px;
         box-shadow: 0.1px 0.1px 5px 0px rgba(211, 209, 209, 0.75);
         height: 60px;
@@ -533,7 +538,7 @@ position: relative;
         align-items: center;
         gap: 8px;
         width: 600px;
-        padding-right: 00px;
+        padding-right: 10px;
         
     }
 

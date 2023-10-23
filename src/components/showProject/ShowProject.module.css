@@ -216,9 +216,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
     padding: 5px 5px;
     margin: 10px 0px;
   }
+  
+/* Sort Option Styles */
+.sortOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  
+  padding: 0px 0px;
+}
+
+/* Sort Option Select Styles */
+.sortOptionSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none;
+  padding: 5px 0px;
+}
+
+/* Sort Option Input Styles */
+.sortOptionInput {
+  padding: 6px 4px;
+  border: none;
+  border-radius: 5px;
+  border: 0.5px solid rgb(134, 134, 134);
+width: 87%;
+  outline: none;
+}
+.container{
+  margin: 10px 0px;
+}
+
 
 }
 
@@ -308,6 +343,7 @@
     top: 0px;
     font-size: 14px;
     z-index: 44;
+  
   }
 
   /* Sort Option Styles */
@@ -336,7 +372,7 @@
   /* Sort Option Input Styles */
   .sortOptionInput {
     padding: 5px 4px;
-    width: 90%;
+    width: 80%;
     border: none;
     border-radius: 5px;
     border: 0.2px solid rgb(134, 134, 134);
@@ -392,7 +428,7 @@
   /* Sort Option Input Styles */
   .sortOptionInput {
     padding: 5px 4px;
-    width: 80%;
+    width: 97%;
     border: none;
     border-radius: 5px;
     border: 0.2px solid rgb(134, 134, 134);
