@@ -45,7 +45,33 @@ To run the frontend locally, follow these steps:
    ```
    The application will be available at `http://localhost:5173`.
 
-To run the backend locally, clone the backend repository [here](https://github.com/Arvind78/Project-Management-Server.git) and follow similar steps as above.
+To run the backend locally, clone the backend repository [here](https://github.com/Arvind78/Project-Management-Server.git) and follow  the steps .
+
+## Getting Started
+
+To run the frontend locally, follow these steps:
+
+1. Clone the frontend repository:
+   ```
+   git clone https://github.com/Arvind78/Project-Management-Server.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd Project-Management-Server
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Run the development server:
+   ```
+   npm start
+   ```
+   The application will be available at `http://localhost:8080`.
+
 
 ## Deployment
 
