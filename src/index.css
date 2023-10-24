@@ -146,17 +146,17 @@ input::placeholder {
 
      color: red;
      width:40px;
-     padding:2px 20px;
+     padding:5cm 20px;
 border-radius: 40px;    }
     #two{
         order: 3;  
         width:40px;
-     padding: 2px 20px;
+     padding: 5px 20px;
 
     }
     #three{
         width:40px;
-        padding: 2px 20x;
+        padding: 5px 20x;
    
     }
 }
