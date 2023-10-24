@@ -64,7 +64,8 @@ const ShowProject = () => {
           item.category.toLowerCase().includes(searchLowerCase) ||
           item.priority.toLowerCase().includes(searchLowerCase) ||
           item.department.toLowerCase().includes(searchLowerCase) ||
-          item.location.toLowerCase().includes(searchLowerCase)
+          item.location.toLowerCase().includes(searchLowerCase) ||
+          item.status.toLowerCase().includes(searchLowerCase)
         );
       });
       return setData(searchData)
