@@ -63,7 +63,8 @@ const ShowProject = () => {
           item.category.toLowerCase().includes(searchLowerCase) ||
           item.priority.toLowerCase().includes(searchLowerCase) ||
           item.department.toLowerCase().includes(searchLowerCase) ||
-          item.location.toLowerCase().includes(searchLowerCase)
+          item.location.toLowerCase().includes(searchLowerCase) ||
+          item.status.toLowerCase().includes(searchLowerCase)
         );
       });
       return setData(searchData)
@@ -96,7 +97,7 @@ const ShowProject = () => {
     key: index,
     ProjectName: (
       <div>
-        <p>{item.project}</p>
+        <p style={{textTransform: "capitalize"}}>{item.project}</p>
         {`${item.startDate} To ${item.endDate}`}
 
       </div>
