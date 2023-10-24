@@ -98,7 +98,7 @@ const ShowProject = () => {
     key: index,
     ProjectName: (
       <div>
-        <p>{item.project}</p>
+        <p style={{textTransform: "capitalize"}}>{item.project}</p>
         {`${item.startDate} To ${item.endDate}`}
 
       </div>
