@@ -35,7 +35,7 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
            
            </div>
           <div className={styles.heading}>
-            <h3>{item.project}</h3>
+            <h3 style={{textTransform:"uppercase"}}>{item.project}</h3>
             <p>  {`${item.startDate} To ${item.endDate}`}</p>
         
           </div>
