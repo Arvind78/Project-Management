@@ -116,6 +116,10 @@ option {
     background-color: #055fb4;
 }
 
+.error{
+    font-size: 10px;
+}
+
 /* Add more styles as needed */
 
 
@@ -301,6 +305,9 @@ option {
         gap: 4%;
         margin-top: 15px 0px;
 
+    }
+    .error{
+        font-size: 10px;
     }
 
 }

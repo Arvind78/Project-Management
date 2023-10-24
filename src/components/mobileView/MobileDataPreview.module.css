@@ -50,7 +50,7 @@
 .groupdiv {
  /* padding: 10px 0px; */
 text-align: right;
-font-size:14px;
+font-size:16px;
 }
 .deteilGroup{
   display: flex;
@@ -302,9 +302,13 @@ margin: 20px 0px;
       margin: 10px 0px;
       padding: 5px 5PX;
     gap:5px;
-      font-size: 14px;
+      font-size: 14px;  
     }
-    
+    .groupdiv {
+      /* padding: 10px 0px; */
+     text-align: right;
+     font-size:14px;
+     }
   }
   
 

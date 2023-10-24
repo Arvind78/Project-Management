@@ -167,7 +167,7 @@ const AddProject = () => {
           </div>
 
           <div className={styles.fieldGroup}>
-            <label htmlFor="endData" >End Date as Project Plan</label>
+            <label htmlFor="endData" style={error && {color:"red"}} >End Date as Project Plan</label>
             <input type='date' style={error && { color: "red", borderColor: "red" }} placeholder="Choose end date" className={styles.select} name="endDate" value={projectDetails.endDate} onChange={handleInputChange} />
             {error && <div style={error && { color: "red", borderColor: "red" }} className={styles.error}>{error}</div>}
           </div>

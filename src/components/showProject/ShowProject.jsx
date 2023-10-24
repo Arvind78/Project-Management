@@ -46,7 +46,6 @@ const ShowProject = () => {
       });
   };
 
-  // Handle search functionality
   // Handle search functionality using useMemo to perform filtering
   const filteredData = useMemo(() => {
     if (!searchValue) {
