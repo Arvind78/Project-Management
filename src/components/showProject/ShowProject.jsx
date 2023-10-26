@@ -98,7 +98,7 @@ const ShowProject = () => {
     ProjectName: (
       <div>
         <p style={{textTransform: "capitalize"}}>{item.project}</p>
-        {`${item.startDate} To ${item.endDate}`}
+        {`${item.startDate} to ${item.endDate}`}
 
       </div>
     ),

@@ -11,22 +11,13 @@ const ProjectChart = () => {
       .then(response => response.json())
       .then(data => {
         // Process the API response and prepare data for the chart
-        const departments = Object.keys(data.departmentSuccessPercentage);
-        const chartData = departments.map(department => {
-          const { total, closed, successPercentage } = data.departmentSuccessPercentage[department];
-          return {
-            name: department,
-            total,
-            closed,
-            successPercentage,
-          };
-        });
-        setChartData(chartData);
+        setChartData(data.departmentSuccessPercentage);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
   }, []);
+  console.log(chartData);
 
   const options = {
     chart: {
@@ -49,7 +40,7 @@ const ProjectChart = () => {
        
     },
     xAxis: {
-      categories: chartData ? chartData.map(item => [item.successPercentage, item.name]) : [],
+      categories: chartData ? chartData.map(item => [item.successPercentage, item.department]) : [],
       crosshair: true,
       labels: {
         formatter: function () {
