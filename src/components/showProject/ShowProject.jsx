@@ -210,7 +210,7 @@ const ShowProject = () => {
           {/* Table component */}
           <Table dataSource={dataSource}
 
-            pagination={{ pageSize: 7 }}
+            pagination={{ pageSize: 5 }}
             loading={loading} columns={columns} />
         </div>
         :

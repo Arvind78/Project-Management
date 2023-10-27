@@ -29,11 +29,23 @@ const AddProject = () => {
     });
   };
 
+  
+  
+  const emptyFields = Object.keys(projectDetails).filter(key => projectDetails[key] === '');
 
 
   const handelNewProject = (e) => {
-
     e.preventDefault();
+
+    if (emptyFields.length > 0) {
+      api.error({
+        placement: "top",
+        message: "All fields are required!",
+        description: "Please enter all field data"
+      })
+       return false;
+    }
+
     if (projectDetails.startDate > projectDetails.endDate) {
       setError("End Date should be greater than Start Date");
       return;
