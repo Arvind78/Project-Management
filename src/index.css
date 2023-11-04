@@ -95,8 +95,8 @@ input::placeholder {
 }
 
 /* Center pagination in responsive design */
-:where(.css-dev-override-3mqfnx).ant-table-wrapper .ant-table-pagination-center {
-    justify-content: center;
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
+    justify-content: center !important;
 }
 
 /* Styles for Ant Table Component */
