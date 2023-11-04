@@ -109,11 +109,9 @@ input::placeholder {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td {
 
-    padding: 9px 5px;
+    padding: 8px 5px;
     text-align: center;
     font-size: 13px;
     color: black;
@@ -126,9 +124,7 @@ input::placeholder {
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
-    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
-    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
-    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td {
    
         padding: 5px 5px;
         text-align: center;
