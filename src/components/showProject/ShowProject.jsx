@@ -96,7 +96,7 @@ const ShowProject = () => {
   const dataSource = data.map((item, index) => ({
     key: index,
     ProjectName: (
-      <div>
+      <div className={styles.textSize}>
         <p style={{textTransform: "capitalize"}}>{item.project}</p>
         {`${item.startDate} to ${item.endDate}`}
 
@@ -216,13 +216,13 @@ const ShowProject = () => {
         <div className={styles.tableContainer}>
           {/* Table component */}
           <Table dataSource={dataSource}
-             style={{display:"flex",justifyItems:"center",flexDirection:"column"}}
-            pagination={{ pageSize: 5 }}
+
+            pagination={{ pageSize: 7 }}
             loading={loading} columns={columns} />
         </div>
         :
 
-        <MobileDataPreview data={data} loading={loading}  handleStatus={handleStatus} />
+        <MobileDataPreview data={data} loading={loading} prt handleStatus={handleStatus} />
 
       }
     </div>
