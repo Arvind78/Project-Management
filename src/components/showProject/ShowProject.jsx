@@ -96,7 +96,7 @@ const ShowProject = () => {
   const dataSource = data.map((item, index) => ({
     key: index,
     ProjectName: (
-      <div className={styles.textSize}>
+      <div >
         <p style={{textTransform: "capitalize"}}>{item.project}</p>
         {`${item.startDate} to ${item.endDate}`}
 

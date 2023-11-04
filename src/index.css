@@ -143,17 +143,18 @@ input::placeholder {
 @media (max-width:800px){
     #one{
     border-left:none;
-
      color: red;
      width:40px;
      padding:5px 20px;
-border-radius: 40px;    }
+    border-radius: 40px; 
+   }
+   
     #two{
         order: 3;  
         width:40px;
-     padding: 5px 20px;
-
+        padding: 5px 20px;
     }
+
     #three{
         width:40px;
         padding: 5px 20x;

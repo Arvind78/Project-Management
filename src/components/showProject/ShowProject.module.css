@@ -25,20 +25,20 @@
 
 }
 
-.tableContainer table tr{
+.tableContainer table tr {
   padding: 0px 4px;
   font-size: 14px;
 
 }
 
-.tableContainer table tr td{
+.tableContainer table tr td {
   padding: 0px 4px;
   font-size: 14px;
 
 
 }
 
-.tableContainer table tr td th{
+.tableContainer table tr td th {
   padding: 0px 4px;
   font-size: 14px;
 
@@ -124,9 +124,7 @@
   text-decoration: underline;
 }
 
-.textSize{
-  text-align: center;
-}
+
 
 @media (max-width:1350px) {
   .showDataContainer {
@@ -147,9 +145,7 @@
 
     width: 93.4%;
   }
-  .textSize{
-    font-size: 12px;
-  }
+
 }
 
 @media (max-width:1000px) {
@@ -157,9 +153,7 @@
 
     width: 93.3%;
   }
-  .textSize{
-    font-size: 12px;
-  }
+
 
 }
 
@@ -170,9 +164,7 @@
 
     width: 93%;
   }
-  .textSize{
-    font-size: 10px;
-  }
+
 
 }
 
@@ -183,9 +175,7 @@
 
     width: 92.6%;
   }
-  .textSize{
-    font-size: 8px;
-  }
+
 
 }
 
@@ -195,9 +185,7 @@
 
     width: 92.3%;
   }
-  .textSize{
-    font-size: 8px;
-  }
+
 
 }
 
@@ -231,7 +219,7 @@
 
     width: 92.1%;
   }
- 
+
 }
 
 @media (max-width:800px) {
@@ -260,43 +248,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
     padding: 5px 5px;
     margin: 10px 0px;
   }
-  
-/* Sort Option Styles */
-.sortOption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
-  
-  padding: 0px 0px;
-}
 
-/* Sort Option Select Styles */
-.sortOptionSelect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  border: none;
-  padding: 5px 0px;
-}
+  /* Sort Option Styles */
+  .sortOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 0px 0px;
+  }
 
-/* Sort Option Input Styles */
-.sortOptionInput {
-  padding: 6px 4px;
-  border: none;
-  border-radius: 5px;
-  border: 0.5px solid rgb(134, 134, 134);
-width: 87%;
-  outline: none;
-}
-.container{
-  margin: 10px 0px;
-}
+  /* Sort Option Select Styles */
+  .sortOptionSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: none;
+    padding: 5px 0px;
+  }
+
+  /* Sort Option Input Styles */
+  .sortOptionInput {
+    padding: 6px 4px;
+    border: none;
+    border-radius: 5px;
+    border: 0.5px solid rgb(134, 134, 134);
+    width: 87%;
+    outline: none;
+  }
+
+  .container {
+    margin: 10px 0px;
+  }
 
 
 }
@@ -328,7 +316,6 @@ width: 87%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin: 0px 0px;
     position: sticky;
     background-color: #fff;
@@ -387,7 +374,7 @@ width: 87%;
     top: 0px;
     font-size: 14px;
     z-index: 44;
-  
+
   }
 
   /* Sort Option Styles */
@@ -397,7 +384,7 @@ width: 87%;
     justify-content: center;
     flex-direction: column;
     gap: 1px;
-width: 35%;
+    width: 35%;
     padding: 0px 0px;
   }
 
@@ -420,7 +407,6 @@ width: 35%;
     border: none;
     border-radius: 5px;
     border: 0.2px solid rgb(134, 134, 134);
-
     outline: none;
   }
 
@@ -430,7 +416,6 @@ width: 35%;
 
 
 @media (max-width: 350px) {
- 
   .searchBar {
     width: 100%;
     display: flex;
@@ -453,7 +438,7 @@ width: 35%;
     flex-direction: column;
     gap: 1px;
     width: 35%;
-  
+
     padding: 0px 0px;
   }
 
@@ -477,11 +462,10 @@ width: 35%;
     border: none;
     border-radius: 5px;
     border: 0.2px solid rgb(134, 134, 134);
-
     outline: none;
   }
-.container{
-  margin: 10px 2px;
+
+  .container {
+    margin: 10px 2px;
+  }
 }
-}
- 
