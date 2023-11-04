@@ -109,7 +109,7 @@ const ShowProject = () => {
     Department: item.department,
     Location: item.location,
     Status: item.status,
-    Pro_leader: item.projectLeader,
+    // Pro_leader: item.projectLeader,
     update: (
       <div className={styles.btnGroup}>
         <Button type={"primary"} onClick={() => handleStatus(item._id, "Running")}>Start</Button>
@@ -163,11 +163,11 @@ const ShowProject = () => {
       key: 'Status',
     },
     
-    {
-      title: 'Pro_Leader',
-      dataIndex: 'Pro_Leader',
-      key: 'Pro_leader',
-    },
+    // {
+    //   title: 'Pro_Leader',
+    //   dataIndex: 'Pro_Leader',
+    //   key: 'Pro_leader',
+    // },
 
     {
       title: '',
