@@ -49,7 +49,7 @@ input.ant-input.css-dev-only-do-not-override-3mqfnx {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-btn-primary:not(:disabled) {
     color: #fff;
     background-color: #4096ff;
-    border-radius: 30px !important;
+    border-radius: 30px;
 }
 
 /* Input placeholder text styles */
@@ -95,17 +95,18 @@ input::placeholder {
 }
 
 /* Center pagination in responsive design */
-.ant-table-wrapper .ant-table-pagination-right {
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-pagination-right {
     justify-content: center;
-    text-align: center !important;
 }
-
 
 /* Styles for Ant Table Component */
-.ant-table-wrapper .ant-table {
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
     padding: 0px 10px;
     font-size: 14px;
+    text-align: center;
 }
+
+
 
 /* Styles for table cells, headers, and footers */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
@@ -115,10 +116,17 @@ input::placeholder {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
     position: relative;
-    padding: 9px 5px !important;
+    padding: 9px 5px;
     text-align: center;
     font-size: 13px;
     color: black;
+    overflow-wrap: break-word;
+}
+
+
+:where(.css-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-3mqfnx).ant-table-wrapper tfoot>tr>td{
+    position: relative;
+    padding: 5px 9px;
     overflow-wrap: break-word;
 }
 
@@ -132,7 +140,7 @@ input::placeholder {
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
         position: relative;
-        padding: 5px 5px !important;
+        padding: 5px 5px;
         text-align: center;
         font-size: 10px;
         text-align: center;
@@ -141,6 +149,7 @@ input::placeholder {
     }
 
 }
+
 
 @media (max-width:800px){
     #one{
