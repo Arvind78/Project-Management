@@ -112,9 +112,9 @@ const ShowProject = () => {
     Pro_leader: item.projectLeader,
     update: (
       <div className={styles.btnGroup}>
-        <Button type={"primary"} onClick={() => handleStatus(item._id, "Running")}>Start</Button>
-        <Button type={"default"} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
-        <Button type={"default"} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
+        <Button style={{borderRadius:"30px"}} type={"primary"} onClick={() => handleStatus(item._id, "Running")}>Start</Button>
+        <Button style={{borderRadius:"30px"}} type={"default"} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
+        <Button  style={{borderRadius:"30px"}} type={"default"} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
       </div>
     ),
   }));
