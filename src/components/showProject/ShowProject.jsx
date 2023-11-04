@@ -96,7 +96,7 @@ const ShowProject = () => {
   const dataSource = data.map((item, index) => ({
     key: index,
     ProjectName: (
-      <div className={styles.projectNameinfo}>
+      <div>
         <p style={{textTransform: "capitalize"}}>{item.project}</p>
         {`${item.startDate} to ${item.endDate}`}
 
@@ -165,7 +165,7 @@ const ShowProject = () => {
     
     {
       title: 'Pro_Leader',
-      dataIndex: 'Pro_Leader',
+      dataIndex: 'Pro_leader',
       key: 'Pro_leader',
     },
 
@@ -213,7 +213,7 @@ const ShowProject = () => {
       </div>
 
       {(windowWidth > 810) ?
-        <div className={styles.tableContainer }>
+        <div className={styles.tableContainer}>
           {/* Table component */}
           <Table dataSource={dataSource}
 
