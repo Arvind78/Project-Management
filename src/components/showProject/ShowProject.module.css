@@ -124,6 +124,10 @@
   text-decoration: underline;
 }
 
+.textSize{
+  text-align: center;
+}
+
 @media (max-width:1350px) {
   .showDataContainer {
 
