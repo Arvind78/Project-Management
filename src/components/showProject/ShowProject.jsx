@@ -216,7 +216,7 @@ const ShowProject = () => {
         <div className={styles.tableContainer}>
           {/* Table component */}
           <Table dataSource={dataSource}
-
+             style={{display:"flex",justifyItems:"center",flexDirection:"column"}}
             pagination={{ pageSize: 5 }}
             loading={loading} columns={columns} />
         </div>
