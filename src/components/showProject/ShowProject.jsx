@@ -222,7 +222,7 @@ const ShowProject = () => {
         </div>
         :
 
-        <MobileDataPreview data={data} loading={loading} prt handleStatus={handleStatus} />
+        <MobileDataPreview data={data} loading={loading}  handleStatus={handleStatus} />
 
       }
     </div>
