@@ -13,13 +13,7 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
   const endIndex = startIndex + itemsPerPage;
   const currentItems = data.slice(startIndex, endIndex);
 
-  const handleNextPage = () => {
-    setCurrentPage(currentPage + 1);
-  };
-
-  const handlePrevPage = () => {
-    setCurrentPage(currentPage - 1);
-  };
+ 
 
   return (
     <>
@@ -65,9 +59,13 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
         
           </div>
           <div className={styles.btnGroup}>
-        <Button type='primary' onClick={() => handleStatus(item._id, "Running")}>Start</Button>
-        <Button onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
-        <Button onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
+        <Button  style={{ borderRadius:"30px"}} type='primary' onClick={() => handleStatus(item._id, "Running")}>Start</Button>
+        <Button style={{
+           borderRadius:"30px"
+        }} onClick={() => handleStatus(item._id, "Closed")}>Close</Button>
+        <Button style={{
+           borderRadius:"30px"
+        }} onClick={() => handleStatus(item._id, "Cancelled")}>Cancel</Button>
       </div>
         </div>
       ))}
@@ -78,8 +76,7 @@ const MobileDataPreview = ({ data ,handleStatus,loading}) => {
  {loading &&
  <div className={styles.loaderCoantainer}>
         <div className={styles.loader}></div> 
-      
-       
+    
         </div>  
       }
          {data.length>0 &&
