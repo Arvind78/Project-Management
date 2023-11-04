@@ -18,6 +18,7 @@ const AddProject = () => {
     startDate: null,
     endDate: null,
     location: '',
+    projectLeader:""
   });
 
 
@@ -51,7 +52,7 @@ const AddProject = () => {
       return;
     }
 
-    axios.post("https://project-manegement.onrender.com/api/newproject", projectDetails).then((res) => {
+    axios.post("http://localhost:8080/api/newproject", projectDetails).then((res) => {
 
       api.success({
         placement: "top",
@@ -77,6 +78,7 @@ const AddProject = () => {
       startDate: '',
       endDate: '',
       location: '',
+      projectLeader:""
     });
     setError(null);
   }
@@ -153,7 +155,6 @@ const AddProject = () => {
               <option value="Medium">Medium</option>
               <option value="High">High</option>
 
-
             </select>
           </div>
 
@@ -196,7 +197,17 @@ const AddProject = () => {
             </select>
           </div>
 
+
+         
+
         </div>
+
+         <div className={styles.projectLeader}>
+            <label htmlFor="" style={{padding:"0px 5px"}}>Project Leader</label>
+          <input type="text" name="projectLeader"
+           placeholder='Enter Project Leader Name'
+          value={projectDetails.projectLeader} onChange={handleInputChange}  />
+          </div>
 
         {/* Project Status */}
         <div className={styles.status}>

@@ -59,6 +59,21 @@
 
 }
 
+.projectLeader{
+    display: flex;
+    flex-direction: column;
+    width:260px;
+    padding: 0px 5px;
+
+    gap: 4px;
+}
+
+.projectLeader input {
+padding: 10px 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+
+}
 .formGroup2 .fieldGroup {
     display: flex;
     justify-content: center;
@@ -147,6 +162,15 @@ option {
         border-radius: 5px;
 
     }
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width:255px;
+        padding: 0px 5px;
+    
+        gap: 4px;
+    }
+    
 
     .formGroup {
         display: flex;
@@ -258,6 +282,14 @@ option {
         border-radius: 30px;
 
     }
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width:210px;
+        padding: 0px 5px;
+
+        gap: 4px;
+    }
 }
 
 
@@ -310,6 +342,14 @@ option {
         font-size: 10px;
     }
 
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width:205px;
+        padding: 0px 5px;
+
+        gap: 4px;
+    }
 }
 
 @media (max-width:730px) {
@@ -358,6 +398,14 @@ option {
         gap: 4%;
         margin-top: 15px 0px;
 
+    }
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+  
+padding: 0px 5px;
+        gap: 4px;
     }
 
 }
@@ -573,6 +621,22 @@ option {
         font-size: 16px;
         margin:8px  0px 0px 0px ;
 
+
+    }
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    padding: 0px 5px;
+
+        gap: 4px;
+    }
+    
+    .projectLeader input {
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
     }
 }
 
@@ -599,6 +663,21 @@ option {
         border: 1px solid #ccc;
         border-radius: 30px;
 
+    }
+
+    .projectLeader{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 15px;
+        gap: 4px;
+    }
+    
+    .projectLeader input {
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
     }
 
     .form {

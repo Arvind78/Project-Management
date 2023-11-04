@@ -109,6 +109,7 @@ const ShowProject = () => {
     Department: item.department,
     Location: item.location,
     Status: item.status,
+    Pro_leader: item.projectLeader,
     update: (
       <div className={styles.btnGroup}>
         <Button type={"primary"} onClick={() => handleStatus(item._id, "Running")}>Start</Button>
@@ -161,6 +162,12 @@ const ShowProject = () => {
       dataIndex: 'Status',
       key: 'Status',
     },
+    
+    {
+      title: 'Pro_leader',
+      dataIndex: 'Pro_leader',
+      key: 'Pro_leader',
+    },
 
     {
       title: '',
@@ -210,7 +217,7 @@ const ShowProject = () => {
           {/* Table component */}
           <Table dataSource={dataSource}
 
-            pagination={{ pageSize: 5 }}
+            pagination={{ pageSize: 7 }}
             loading={loading} columns={columns} />
         </div>
         :
