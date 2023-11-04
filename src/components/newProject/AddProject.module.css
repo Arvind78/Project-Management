@@ -62,15 +62,16 @@
 .projectLeader{
     display: flex;
     flex-direction: column;
-    width:260px;
+    width:258px;
     padding: 0px 5px;
 
     gap: 4px;
 }
 
 .projectLeader input {
-padding: 10px 10px;
+padding: 12px 10px;
 border-radius: 5px;
+outline: none;
 border: 1px solid #ccc;
 
 }
