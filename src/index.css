@@ -103,10 +103,7 @@ input::placeholder {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
     padding: 0px 10px;
     font-size: 14px;
-    text-align: center;
 }
-
-
 
 /* Styles for table cells, headers, and footers */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
@@ -120,13 +117,6 @@ input::placeholder {
     text-align: center;
     font-size: 13px;
     color: black;
-    overflow-wrap: break-word;
-}
-
-
-:where(.css-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-3mqfnx).ant-table-wrapper tfoot>tr>td{
-    position: relative;
-    padding: 5px 9px;
     overflow-wrap: break-word;
 }
 
@@ -149,7 +139,6 @@ input::placeholder {
     }
 
 }
-
 
 @media (max-width:800px){
     #one{

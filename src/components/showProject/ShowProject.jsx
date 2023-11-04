@@ -164,8 +164,8 @@ const ShowProject = () => {
     },
     
     {
-      title: 'Pro_leader',
-      dataIndex: 'Pro_leader',
+      title: 'Pro_Leader',
+      dataIndex: 'Pro_Leader',
       key: 'Pro_leader',
     },
 
@@ -213,7 +213,7 @@ const ShowProject = () => {
       </div>
 
       {(windowWidth > 810) ?
-        <div className={styles.tableContainer}>
+        <div className={styles.tableContainer }>
           {/* Table component */}
           <Table dataSource={dataSource}
 
