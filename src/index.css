@@ -49,7 +49,7 @@ input.ant-input.css-dev-only-do-not-override-3mqfnx {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-btn-primary:not(:disabled) {
     color: #fff;
     background-color: #4096ff;
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 
 /* Input placeholder text styles */
@@ -100,6 +100,7 @@ input::placeholder {
     text-align: center;
 }
 
+
 /* Styles for Ant Table Component */
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table {
     padding: 0px 10px;
@@ -110,9 +111,11 @@ input::placeholder {
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
 :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
-:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td {
-
-    padding: 0px 5px;
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+    position: relative;
+    padding: 9px 5px !important;
     text-align: center;
     font-size: 13px;
     color: black;
@@ -125,9 +128,11 @@ input::placeholder {
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
     :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th,
-    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td {
-   
-        padding: 0px 5px;
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th,
+    :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td {
+        position: relative;
+        padding: 5px 5px !important;
         text-align: center;
         font-size: 10px;
         text-align: center;
