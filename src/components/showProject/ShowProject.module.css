@@ -25,6 +25,27 @@
 
 }
 
+.tableContainer table tr{
+  padding: 0px 4px;
+  font-size: 14px;
+
+}
+
+.tableContainer table tr td{
+  padding: 0px 4px;
+  font-size: 14px;
+
+
+}
+
+.tableContainer table tr td th{
+  padding: 0px 4px;
+  font-size: 14px;
+
+
+}
+
+
 /* Search Bar Styles */
 .searchBar {
   width: 100%;
